@@ -10,11 +10,12 @@ Q=json.load(open('lot4/queue.json')); byid={x['id']:x for x in Q}
 orig=json.load(open('lot4/orig.json'))
 out=json.load(open('lot4/px.json')) if os.path.exists('lot4/px.json') else {}
 for gid in sys.argv[1:]:
-    it=byid[gid]; T=it['T']; big=Image.open('raw/lot4_%s.png'%gid).convert('RGB'); S=big.width; cs=S/3
+    it=byid[gid]; n=it.get('n',3); big=Image.open('raw/lot4_%s.png'%gid).convert('RGB'); S=big.width; cs=S/n
     tiles=[]
-    for i,k in enumerate(it['keys']):
-        cell=big.crop((int((i%3)*cs),int((i//3)*cs),int((i%3+1)*cs),int((i//3+1)*cs)))
-        rgb,al=px2.cutout(cell,minhole=300)
+    for i,tk in enumerate(it['keys']):
+        T,k=tk.split(':',1)
+        cell=big.crop((int((i%n)*cs),int((i//n)*cs),int((i%n+1)*cs),int((i//n+1)*cs)))
+        rgb,al=px2.cutout(cell,minhole=300 if n==3 else 150)
         o,b=native(rgb,al)
         if b<4 or b>20: o,b=native(rgb,al,hint=8)
         g=Image.fromarray(o,'RGBA'); g=g.crop(g.getbbox())

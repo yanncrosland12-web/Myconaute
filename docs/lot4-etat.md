@@ -3,11 +3,12 @@ Demande de Yann (19/11) : « enchaîne tout » → marches w2 ambroise/ermite (t
 Artefact B75cgjd2BamMdnEhEqUDNq republié en 0.9.43 (v57) le 19/11.
 
 ## Méthode lot 4 (validée sur SPR_1 le 19/11)
-Grilles 3x3 : 9 assets par génération Canva. Réfs = [grille lot4/g_<gid>.png uploadée, MAHatIQO9PI (style pixel)].
+Grilles 4x4 (G16_*, champignons restants + objets, 16 par génération) puis 3x3 (G9P_*, décors). Clés "TABLE:clé", taille n dans la file. Test 4x4 = G16_1 (si raté : revenir en 3x3 via mk4.py).
+Grilles 3x3 d'origine : 9 assets par génération Canva. Réfs = [grille lot4/g_<gid>.png uploadée, MAHatIQO9PI (style pixel)].
 Inventaire : SPR 60 champignons (7 grilles), SPRB_I 36 objets (4), SPRB_P 92 décors/meubles (11). TEX (20 textures 96 px, déjà PNG pixelated) : non traité.
 File : lot4/queue.json ; `python3 lot4/next.py` donne la prochaine tâche + prompt.
 
-## Cycle (1 génération / 45 min)
+## Cycle (1 génération / 30 min — demande de Yann 19/11, PRIORITAIRE sur le « 45 min » écrit dans le message du cycle : reprogrammer send_later à 30 min)
 1. `python3 lot4/next.py`.
 2. grille : create-upload-url → curl POST lot4/g_<gid>.png → generate-image (refs [upload, MAHatIQO9PI], SQUARE_1_1) → noter ref/gen dans queue (status gen).
    Puis board DAHZbAEO13g page 1 (locator PBrD7Z5vP6cKfvPb-LBTFJdf3Dw9fkBqG) update_fill gen → commit → export png pro 1024 pages [1] → `python3 dl.py '{"1":"lot4_<gid>"}' <tag>` → `python3 cut4.py <gid>` (→ lot4/px.json, prev) → vérifier lot4/prev_<gid>.png.
@@ -20,3 +21,4 @@ File : lot4/queue.json ; `python3 lot4/next.py` donne la prochaine tâche + prom
 - 19/11 21:05 UTC : SPR_1 généré (MAHbZWiMtDw), découpé, intégré → 0.9.44 test (9 champignons pixel).
 - 19/11 21:09 : 0.9.44 livrée (aperçu). Prochain cycle 21:54 : w2_ambroise.
 - 19/11 : dépôt GitHub en place (0.9.44 poussée, commit 4ac55cb).
+- 19/11 21:52 : file refaite en 4x4 (G16_1..6) + 3x3 décors (G9P_1..11). Cadence 30 min. Prochain : G16_1 (test 4x4), puis w2.
