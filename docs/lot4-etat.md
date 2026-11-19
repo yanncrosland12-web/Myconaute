@@ -25,3 +25,4 @@ File : lot4/queue.json ; `python3 lot4/next.py` donne la prochaine tâche + prom
 - 19/11 21:55 : TEST 4x4 G16_1 réussi (MAHbZUiHgYA) : 16/16 dans l'ordre, rendu équivalent au 3x3. On garde 4x4. Prochain (22:25) : w2_ambroise.
 - 19/11 22:30 : w2_ambroise OK (MAHbZnVWcms) → chars_extra.json. Prochain (23:00) : w2_ermite.
 - 19/11 23:05 : w2_ermite OK (MAHbZ40Aniw). Palier w2 → 0.9.45 construite, livrée, artefact republié. Prochain (23:31) : G16_2.
+- 19/11 23:36 : G16_2 OK (MAHbZxAp-_s), découpe améliorée (taille de pixel fixée si écart >12 %). 41/60 champignons. Prochain (00:06) : G16_3.

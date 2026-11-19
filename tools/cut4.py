@@ -19,7 +19,7 @@ for gid in sys.argv[1:]:
         try: o,b=native(rgb,al)
         except Exception: o,b=None,0
         ref=it.get('_b') or (10 if n==4 else 11)
-        if o is None or abs(b-ref)/ref>0.25: o,b=native(rgb,al,hint=ref)
+        if o is None or abs(b-ref)/ref>0.12: o,b=native(rgb,al,hint=ref,fixed=True)
         g=Image.fromarray(o,'RGBA'); g=g.crop(g.getbbox())
         q=orig[T][k]; oi=Image.open(io.BytesIO(base64.b64decode(q[0]))).convert('RGBA'); iw,ih=oi.size
         bx0,by0,bx1,by1=oi.getbbox(); x,y,w,h=q[1:5]
