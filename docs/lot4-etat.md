@@ -23,3 +23,4 @@ File : lot4/queue.json ; `python3 lot4/next.py` donne la prochaine tâche + prom
 - 19/11 : dépôt GitHub en place (0.9.44 poussée, commit 4ac55cb).
 - 19/11 21:52 : file refaite en 4x4 (G16_1..6) + 3x3 décors (G9P_1..11). Cadence 30 min. Prochain : G16_1 (test 4x4), puis w2.
 - 19/11 21:55 : TEST 4x4 G16_1 réussi (MAHbZUiHgYA) : 16/16 dans l'ordre, rendu équivalent au 3x3. On garde 4x4. Prochain (22:25) : w2_ambroise.
+- 19/11 22:30 : w2_ambroise OK (MAHbZnVWcms) → chars_extra.json. Prochain (23:00) : w2_ermite.
