@@ -1,0 +1,378 @@
+[
+ {
+  "id": "w2_ambroise",
+  "kind": "w2",
+  "status": "todo"
+ },
+ {
+  "id": "w2_ermite",
+  "kind": "w2",
+  "status": "todo"
+ },
+ {
+  "id": "SPR_1",
+  "kind": "grid",
+  "T": "SPR",
+  "keys": [
+   "pleurote",
+   "vesse",
+   "amanite",
+   "coprin",
+   "girolle",
+   "cordyceps",
+   "mycene",
+   "cepe",
+   "lactaire"
+  ],
+  "status": "done",
+  "ref": "MAHbZcdP6L8",
+  "gen": "MAHbZWiMtDw"
+ },
+ {
+  "id": "SPR_2",
+  "kind": "grid",
+  "T": "SPR",
+  "keys": [
+   "morille",
+   "truffe",
+   "wyverne",
+   "prismelle",
+   "spiralique",
+   "oeil",
+   "fractale",
+   "piedbleu",
+   "clavaire"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPR_3",
+  "kind": "grid",
+  "T": "SPR",
+  "keys": [
+   "lepiote",
+   "hydne",
+   "pezize",
+   "clathre",
+   "polypore",
+   "collybie",
+   "strophaire",
+   "hygrophore",
+   "armillaire"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPR_4",
+  "kind": "grid",
+  "T": "SPR",
+  "keys": [
+   "tonnerre",
+   "pholiote",
+   "mandragore",
+   "horloge",
+   "licorne",
+   "phenix",
+   "larme",
+   "roifongique",
+   "nebuleuse"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPR_5",
+  "kind": "grid",
+  "T": "SPR",
+  "keys": [
+   "miroir",
+   "ricaneur",
+   "mousseron",
+   "grognon",
+   "oreille",
+   "coulemelle",
+   "cristalline",
+   "lanterne",
+   "sangdragon"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPR_6",
+  "kind": "grid",
+  "T": "SPR",
+  "keys": [
+   "gourmande",
+   "reveuse",
+   "miaulette",
+   "sablier",
+   "coeurforet",
+   "laineux",
+   "trompette",
+   "langue",
+   "vessegeante"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPR_7",
+  "kind": "grid",
+  "T": "SPR",
+  "keys": [
+   "perroquet",
+   "feufollet",
+   "vase",
+   "sangsue",
+   "lotus",
+   "crapaud"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPRB_I_1",
+  "kind": "grid",
+  "T": "SPRB_I",
+  "keys": [
+   "dish_bouillon_lune",
+   "dish_civet_truffe",
+   "dish_croute_sel",
+   "dish_fondue_troll",
+   "dish_gelee_licorne",
+   "dish_gratin_profondeurs",
+   "dish_morilles_creme",
+   "dish_puree_mandragore",
+   "dish_ragout_bucheron"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPRB_I_2",
+  "kind": "grid",
+  "T": "SPRB_I",
+  "keys": [
+   "dish_ragout_fantome",
+   "dish_ragout_guerrier",
+   "dish_soupe_bois",
+   "dish_soupe_hallu",
+   "dish_soupe_pleurote",
+   "dish_tarte_girolles",
+   "dish_tartine",
+   "dish_tourte_grappes",
+   "dish_veloute_cepe"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPRB_I_3",
+  "kind": "grid",
+  "T": "SPRB_I",
+  "keys": [
+   "mat_cristal",
+   "mat_ecaille",
+   "mat_fromage",
+   "mat_poudre",
+   "mat_sel",
+   "mat_soufre",
+   "mat_venin",
+   "pot_esquive",
+   "pot_feu"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPRB_I_4",
+  "kind": "grid",
+  "T": "SPRB_I",
+  "keys": [
+   "pot_force",
+   "pot_grand_soin",
+   "pot_grossetete",
+   "pot_hate",
+   "pot_lilliput",
+   "pot_metamorphe",
+   "pot_pierre",
+   "pot_poison",
+   "pot_soin"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPRB_P_1",
+  "kind": "grid",
+  "T": "SPRB_P",
+  "keys": [
+   "oak",
+   "pine",
+   "birch",
+   "willow",
+   "dead",
+   "crystal",
+   "f_rock",
+   "f_bush",
+   "f_log"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPRB_P_2",
+  "kind": "grid",
+  "T": "SPRB_P",
+  "keys": [
+   "g_rock",
+   "g_stal",
+   "chest",
+   "f_grotte",
+   "g_stairs",
+   "g_vein",
+   "g_exit",
+   "h_lit_paille",
+   "h_lit_bois"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPRB_P_3",
+  "kind": "grid",
+  "T": "SPRB_P",
+  "keys": [
+   "h_lit_champi",
+   "h_lit_hamac",
+   "h_lit_baldaquin",
+   "h_lumiere_bougie",
+   "h_lumiere_lanterne",
+   "h_lumiere_lustre",
+   "h_meuble_caisse",
+   "h_meuble_etabli",
+   "h_meuble_biblio"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPRB_P_4",
+  "kind": "grid",
+  "T": "SPRB_P",
+  "keys": [
+   "h_meuble_coffre",
+   "h_meuble_armure",
+   "h_tapis_rouge",
+   "h_tapis_champi",
+   "h_tapis_tresse",
+   "h_tapis_etoile",
+   "h_tableau_amanite",
+   "h_tableau_carte",
+   "h_tableau_trophee"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPRB_P_5",
+  "kind": "grid",
+  "T": "SPRB_P",
+  "keys": [
+   "h_tableau_horloge",
+   "h_tableau_epees",
+   "h_tableau_aldric",
+   "h_compagnon_crapaud",
+   "h_compagnon_escargot",
+   "h_compagnon_chat",
+   "h_compagnon_chauve",
+   "h_compagnon_lapin",
+   "h_compagnon_renard"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPRB_P_6",
+  "kind": "grid",
+  "T": "SPRB_P",
+  "keys": [
+   "h_compagnon_hibou",
+   "h_plante_fougere",
+   "h_plante_bonsai",
+   "h_fenetre_hublot",
+   "h_fenetre_grande",
+   "h_fenetre_vitrail",
+   "k_four_atre",
+   "k_four_fonte",
+   "k_four_champi"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPRB_P_7",
+  "kind": "grid",
+  "T": "SPRB_P",
+  "keys": [
+   "k_four_dragon",
+   "k_marmite_fonte",
+   "k_marmite_cuivre",
+   "k_marmite_chaudron",
+   "k_marmite_or",
+   "k_plan_table",
+   "k_plan_billot",
+   "k_plan_marbre",
+   "k_plan_etal"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPRB_P_8",
+  "kind": "grid",
+  "T": "SPRB_P",
+  "keys": [
+   "k_etagere_planche",
+   "k_etagere_bocaux",
+   "k_etagere_epices",
+   "k_etagere_fromages",
+   "k_etagere_grimoires",
+   "k_deco_herbes",
+   "k_deco_casseroles",
+   "k_deco_chapelet",
+   "k_deco_ail"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPRB_P_9",
+  "kind": "grid",
+  "T": "SPRB_P",
+  "keys": [
+   "k_deco_lanternes",
+   "k_aide_lutin",
+   "k_aide_hibou",
+   "k_aide_chat",
+   "k_aide_golem",
+   "k_fenetre",
+   "k_tapis",
+   "l_carte",
+   "l_lierre"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPRB_P_10",
+  "kind": "grid",
+  "T": "SPRB_P",
+  "keys": [
+   "l_hublot",
+   "l_chaudron",
+   "l_etabli",
+   "l_biblio",
+   "a_banniere_rouge",
+   "a_banniere_bleue",
+   "a_cible",
+   "a_ratelier",
+   "a_mannequin"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "SPRB_P_11",
+  "kind": "grid",
+  "T": "SPRB_P",
+  "keys": [
+   "a_rochers",
+   "a_presentoir"
+  ],
+  "status": "todo"
+ }
+]

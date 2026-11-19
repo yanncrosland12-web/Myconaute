@@ -1,0 +1,69 @@
+{
+ "fee": {
+  "f": "MAHbDO3NiRg",
+  "desc": "a mushroom fairy girl with turquoise hair, a small golden crown, translucent purple butterfly wings, a pink dress with a lilac belt and a mushroom buckle, purple leggings, holding a wooden staff topped with a red spotted mushroom",
+  "ref": {
+   "b": "MAHbDCyXbv4",
+   "w": "MAHbDF_NFuE",
+   "w2": "MAHbDL4U-7k",
+   "a": "MAHbDHy83Ls"
+  },
+  "done": {
+   "b": "MAHbDNPlrSw",
+   "w": "MAHbDY0fiz8",
+   "w2": "MAHbDjdsPSc",
+   "a": "MAHbD6IIvFE"
+  }
+ },
+ "humus": {
+  "f": "MAHbEPPDRUI",
+  "oldf": "MAHbDLMfJts",
+  "desc": "Humus the bearded mushroom forager, a friendly man with a brown beard, a green felt hat with a leaf and a small mushroom, a cream shirt with a brown neckerchief, brown shorts and belt, green socks, brown boots, a big green bedroll backpack, holding a tall gnarled wooden walking staff",
+  "ref": {
+   "b": "MAHbDKkwAEg",
+   "w": "MAHbDLTBqlQ",
+   "w2": "MAHbDOu5fV8",
+   "a": "MAHbDFTVR0Q"
+  },
+  "done": {
+   "b": "MAHbEeEOx_Q",
+   "w": "MAHbEQKCeOE",
+   "w2": "MAHbEv-mGYM",
+   "a": "MAHbE1_jrsA"
+  }
+ },
+ "odile": {
+  "f": "MAHbFPVc9pE",
+  "oldf": "MAHbDNfxzFs",
+  "desc": "Odile the young mushroom forager girl with long brown hair, a green felt bucket hat with a leaf, a green neckerchief, a cream shirt with brown suspenders, brown shorts, green socks, brown boots, a green bedroll backpack, holding a tall wooden walking staff with a leaf",
+  "ref": {
+   "b": "MAHbDAi4kWk",
+   "w": "MAHbDGTV0Ek",
+   "w2": "MAHbDNa3-Ms",
+   "a": "MAHbDC6kTuo"
+  },
+  "done": {
+   "b": "MAHbFWqEskk",
+   "w": "MAHbFQl6Yb4",
+   "w2": "MAHbFg0QkEY",
+   "a": "MAHbF6TsoC4"
+  }
+ },
+ "vesce": {
+  "f": "MAHbGFwFG-o",
+  "oldf": "MAHbDLoe5KY",
+  "desc": "Vesce the old mushroom forager woman with long white hair, a purple wide-brimmed hat with a red band and a feather, a lilac neckerchief, a white shirt with dark purple suspenders, purple shorts, purple boots, a purple bedroll backpack, holding a tall wooden walking staff",
+  "ref": {
+   "b": "MAHbDNjUBq0",
+   "w": "MAHbDHp81tA",
+   "w2": "MAHbDDhHEiM",
+   "a": "MAHbDJfkSJs"
+  },
+  "done": {
+   "b": "MAHbGcBAPXk",
+   "w": "MAHbGUH9TmQ",
+   "w2": "MAHbGmhias4",
+   "a": "MAHbG3X2JSo"
+  }
+ }
+}
