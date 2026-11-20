@@ -6,7 +6,7 @@ from native import native
 sys.argv,_a=[sys.argv[0]],sys.argv[1:]
 import px2
 sys.argv+=_a
-Q=json.load(open('lot4/queue.json')); byid={x['id']:x for x in Q}
+QP=os.environ.get('QUEUE','lot4/queue.json'); Q=json.load(open(QP)); byid={x['id']:x for x in Q}
 orig=json.load(open('lot4/orig.json'))
 KEEP={'f_grotte','g_stairs','g_exit','chest','g_vein'}
 out=json.load(open('lot4/px.json')) if os.path.exists('lot4/px.json') else {}
@@ -41,4 +41,4 @@ for gid in sys.argv[1:]:
     sh=Image.new('RGBA',(W,H),(60,90,60,255));xx=0
     for t in tiles: sh.paste(t,(xx,H-t.height),t); xx+=t.width+8
     sh.save('lot4/prev_%s.png'%gid); it['status']='done'
-json.dump(out,open('lot4/px.json','w')); json.dump(Q,open('lot4/queue.json','w'),indent=1)
+json.dump(out,open('lot4/px.json','w')); json.dump(Q,open(QP,'w'),indent=1)

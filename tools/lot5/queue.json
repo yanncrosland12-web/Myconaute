@@ -1,0 +1,261 @@
+[
+ {
+  "id": "H4_1",
+  "kind": "grid",
+  "n": 2,
+  "style": "B",
+  "keys": [
+   "SPRB_P:h_lit_paille",
+   "SPRB_P:h_lit_bois",
+   "SPRB_P:h_lit_champi",
+   "SPRB_P:h_lit_hamac"
+  ],
+  "status": "done",
+  "ref": "MAHbepMdnP8",
+  "gen": "MAHbeqDL9r4",
+  "_b": 6.9
+ },
+ {
+  "id": "H4_2",
+  "kind": "grid",
+  "n": 2,
+  "style": "B",
+  "keys": [
+   "SPRB_P:h_lit_baldaquin",
+   "SPRB_P:h_lumiere_bougie",
+   "SPRB_P:h_lumiere_lanterne",
+   "SPRB_P:h_lumiere_lustre"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "H4_3",
+  "kind": "grid",
+  "n": 2,
+  "style": "B",
+  "keys": [
+   "SPRB_P:h_meuble_caisse",
+   "SPRB_P:h_meuble_etabli",
+   "SPRB_P:h_meuble_biblio",
+   "SPRB_P:h_meuble_coffre"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "H4_4",
+  "kind": "grid",
+  "n": 2,
+  "style": "B",
+  "keys": [
+   "SPRB_P:h_meuble_armure",
+   "SPRB_P:h_tapis_rouge",
+   "SPRB_P:h_tapis_champi",
+   "SPRB_P:h_tapis_tresse"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "H4_5",
+  "kind": "grid",
+  "n": 2,
+  "style": "B",
+  "keys": [
+   "SPRB_P:h_tapis_etoile",
+   "SPRB_P:h_tableau_amanite",
+   "SPRB_P:h_tableau_carte",
+   "SPRB_P:h_tableau_trophee"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "H4_6",
+  "kind": "grid",
+  "n": 2,
+  "style": "B",
+  "keys": [
+   "SPRB_P:h_tableau_horloge",
+   "SPRB_P:h_tableau_epees",
+   "SPRB_P:h_tableau_aldric",
+   "SPRB_P:h_compagnon_crapaud"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "H4_7",
+  "kind": "grid",
+  "n": 2,
+  "style": "B",
+  "keys": [
+   "SPRB_P:h_compagnon_escargot",
+   "SPRB_P:h_compagnon_chat",
+   "SPRB_P:h_compagnon_chauve",
+   "SPRB_P:h_compagnon_lapin"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "H4_8",
+  "kind": "grid",
+  "n": 2,
+  "style": "B",
+  "keys": [
+   "SPRB_P:h_compagnon_renard",
+   "SPRB_P:h_compagnon_hibou",
+   "SPRB_P:h_plante_fougere",
+   "SPRB_P:h_plante_bonsai"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "H4_9",
+  "kind": "grid",
+  "n": 2,
+  "style": "B",
+  "keys": [
+   "SPRB_P:h_fenetre_hublot",
+   "SPRB_P:h_fenetre_grande",
+   "SPRB_P:h_fenetre_vitrail"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "R4_1",
+  "kind": "grid",
+  "n": 2,
+  "style": "C",
+  "keys": [
+   "SPRB_P:k_four_atre",
+   "SPRB_P:k_four_fonte",
+   "SPRB_P:k_four_champi",
+   "SPRB_P:k_four_dragon"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "R4_2",
+  "kind": "grid",
+  "n": 2,
+  "style": "C",
+  "keys": [
+   "SPRB_P:k_marmite_fonte",
+   "SPRB_P:k_marmite_cuivre",
+   "SPRB_P:k_marmite_chaudron",
+   "SPRB_P:k_marmite_or"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "R4_3",
+  "kind": "grid",
+  "n": 2,
+  "style": "C",
+  "keys": [
+   "SPRB_P:k_plan_table",
+   "SPRB_P:k_plan_billot",
+   "SPRB_P:k_plan_marbre",
+   "SPRB_P:k_plan_etal"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "R4_4",
+  "kind": "grid",
+  "n": 2,
+  "style": "C",
+  "keys": [
+   "SPRB_P:k_etagere_planche",
+   "SPRB_P:k_etagere_bocaux",
+   "SPRB_P:k_etagere_epices",
+   "SPRB_P:k_etagere_fromages"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "R4_5",
+  "kind": "grid",
+  "n": 2,
+  "style": "C",
+  "keys": [
+   "SPRB_P:k_etagere_grimoires",
+   "SPRB_P:k_deco_herbes",
+   "SPRB_P:k_deco_casseroles",
+   "SPRB_P:k_deco_chapelet"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "R4_6",
+  "kind": "grid",
+  "n": 2,
+  "style": "C",
+  "keys": [
+   "SPRB_P:k_deco_ail",
+   "SPRB_P:k_deco_lanternes",
+   "SPRB_P:k_aide_lutin",
+   "SPRB_P:k_aide_hibou"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "R4_7",
+  "kind": "grid",
+  "n": 2,
+  "style": "C",
+  "keys": [
+   "SPRB_P:k_aide_chat",
+   "SPRB_P:k_aide_golem",
+   "SPRB_P:k_fenetre",
+   "SPRB_P:k_tapis"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "R4_8",
+  "kind": "grid",
+  "n": 2,
+  "style": "C",
+  "keys": [
+   "SPRB_P:l_carte",
+   "SPRB_P:l_lierre",
+   "SPRB_P:l_hublot",
+   "SPRB_P:l_chaudron"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "R4_9",
+  "kind": "grid",
+  "n": 2,
+  "style": "C",
+  "keys": [
+   "SPRB_P:l_etabli",
+   "SPRB_P:l_biblio",
+   "SPRB_P:a_banniere_rouge",
+   "SPRB_P:a_banniere_bleue"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "R4_10",
+  "kind": "grid",
+  "n": 2,
+  "style": "C",
+  "keys": [
+   "SPRB_P:a_cible",
+   "SPRB_P:a_ratelier",
+   "SPRB_P:a_mannequin",
+   "SPRB_P:a_rochers"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "R4_11",
+  "kind": "grid",
+  "n": 2,
+  "style": "C",
+  "keys": [
+   "SPRB_P:a_presentoir"
+  ],
+  "status": "todo"
+ }
+]
