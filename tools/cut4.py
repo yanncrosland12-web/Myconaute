@@ -8,6 +8,7 @@ import px2
 sys.argv+=_a
 Q=json.load(open('lot4/queue.json')); byid={x['id']:x for x in Q}
 orig=json.load(open('lot4/orig.json'))
+KEEP={'f_grotte','g_stairs','g_exit','chest','g_vein'}
 out=json.load(open('lot4/px.json')) if os.path.exists('lot4/px.json') else {}
 for gid in sys.argv[1:]:
     it=byid[gid]; n=it.get('n',3); big=Image.open('raw/lot4_%s.png'%gid).convert('RGB'); S=big.width; cs=S/n
@@ -23,7 +24,7 @@ for gid in sys.argv[1:]:
     for i,tk in enumerate(it['keys']):
         T,k=tk.split(':',1)
         cell=big.crop((int((i%n)*cs),int((i//n)*cs),int((i%n+1)*cs),int((i//n+1)*cs)))
-        rgb,al=px2.cutout(cell,minhole=300 if n==3 else 150)
+        rgb,al=px2.cutout(cell,minhole=(10**9 if k in KEEP else (300 if n==3 else 150)))
         try: o,b=native(rgb,al)
         except Exception: o,b=None,0
         ref=it.get('_b') or (10 if n==4 else 11)

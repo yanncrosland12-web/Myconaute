@@ -214,7 +214,10 @@
    "SPRB_P:h_lit_paille",
    "SPRB_P:h_lit_bois"
   ],
-  "status": "todo"
+  "status": "done",
+  "ref": "MAHbamfiuf8",
+  "gen": "MAHbav1qbBc",
+  "_b": 9.8
  },
  {
   "id": "G9P_3",
