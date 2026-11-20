@@ -169,7 +169,10 @@
    "SPRB_P:k_marmite_chaudron",
    "SPRB_P:k_marmite_or"
   ],
-  "status": "todo"
+  "status": "done",
+  "ref": "MAHbfx3Ra9Q",
+  "gen": "MAHbf02R5KA",
+  "_b": 10.700000000000001
  },
  {
   "id": "R4_3",

@@ -8,8 +8,8 @@ import px2
 sys.argv+=_a
 QP=os.environ.get('QUEUE','lot4/queue.json'); Q=json.load(open(QP)); byid={x['id']:x for x in Q}
 orig=json.load(open('lot4/orig.json'))
-THR={'h_compagnon_chat':10}
-KEEP={'h_fenetre_hublot','h_fenetre_vitrail','h_compagnon_chat','h_compagnon_hibou','h_compagnon_chauve','f_grotte','g_stairs','g_exit','chest','g_vein'}
+THR={'h_compagnon_chat':10,'k_marmite_fonte':10,'k_marmite_chaudron':10}
+KEEP={'k_marmite_fonte','k_marmite_chaudron','h_fenetre_hublot','h_fenetre_vitrail','h_compagnon_chat','h_compagnon_hibou','h_compagnon_chauve','f_grotte','g_stairs','g_exit','chest','g_vein'}
 out=json.load(open('lot4/px.json')) if os.path.exists('lot4/px.json') else {}
 for gid in sys.argv[1:]:
     it=byid[gid]; n=it.get('n',3); big=Image.open('raw/lot4_%s.png'%gid).convert('RGB'); S=big.width; cs=S/n
