@@ -42,7 +42,10 @@
    "SPRB_P:h_meuble_biblio",
    "SPRB_P:h_meuble_coffre"
   ],
-  "status": "todo"
+  "status": "done",
+  "ref": "MAHbewmpLKA",
+  "gen": "MAHbe29PczI",
+  "_b": 9.149999999999999
  },
  {
   "id": "H4_4",
