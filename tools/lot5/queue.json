@@ -137,7 +137,10 @@
    "SPRB_P:h_fenetre_grande",
    "SPRB_P:h_fenetre_vitrail"
   ],
-  "status": "todo"
+  "status": "done",
+  "ref": "MAHbfqlsShU",
+  "gen": "MAHbflfJX1Q",
+  "_b": 8.5
  },
  {
   "id": "R4_1",
