@@ -234,7 +234,10 @@
    "SPRB_P:h_meuble_etabli",
    "SPRB_P:h_meuble_biblio"
   ],
-  "status": "todo"
+  "status": "skip",
+  "ref": "MAHbazn08YQ",
+  "gen": "MAHba7kPYRE",
+  "_b": 9.45
  },
  {
   "id": "G9P_4",
@@ -251,7 +254,7 @@
    "SPRB_P:h_tableau_carte",
    "SPRB_P:h_tableau_trophee"
   ],
-  "status": "todo"
+  "status": "skip"
  },
  {
   "id": "G9P_5",
@@ -268,7 +271,7 @@
    "SPRB_P:h_compagnon_lapin",
    "SPRB_P:h_compagnon_renard"
   ],
-  "status": "todo"
+  "status": "skip"
  },
  {
   "id": "G9P_6",
@@ -285,7 +288,7 @@
    "SPRB_P:k_four_fonte",
    "SPRB_P:k_four_champi"
   ],
-  "status": "todo"
+  "status": "skip"
  },
  {
   "id": "G9P_7",
@@ -302,7 +305,7 @@
    "SPRB_P:k_plan_marbre",
    "SPRB_P:k_plan_etal"
   ],
-  "status": "todo"
+  "status": "skip"
  },
  {
   "id": "G9P_8",
@@ -319,7 +322,7 @@
    "SPRB_P:k_deco_chapelet",
    "SPRB_P:k_deco_ail"
   ],
-  "status": "todo"
+  "status": "skip"
  },
  {
   "id": "G9P_9",
@@ -336,7 +339,7 @@
    "SPRB_P:l_carte",
    "SPRB_P:l_lierre"
   ],
-  "status": "todo"
+  "status": "skip"
  },
  {
   "id": "G9P_10",
@@ -353,7 +356,7 @@
    "SPRB_P:a_ratelier",
    "SPRB_P:a_mannequin"
   ],
-  "status": "todo"
+  "status": "skip"
  },
  {
   "id": "G9P_11",
@@ -363,6 +366,6 @@
    "SPRB_P:a_rochers",
    "SPRB_P:a_presentoir"
   ],
-  "status": "todo"
+  "status": "skip"
  }
 ]

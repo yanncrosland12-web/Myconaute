@@ -32,3 +32,4 @@ File : lot4/queue.json ; `python3 lot4/next.py` donne la prochaine tâche + prom
 - 20/11 01:55 : G16_6 OK (MAHbaV07JAo), mise en page non respectée → découpe par objets (cutblob.py). Palier fin des G16 → 0.9.46 livrée, artefact republié. Prochain (02:25) : G9P_1. NB : si une planche ne respecte pas la grille, utiliser cutblob.py <gid>.
 - 20/11 02:27 : G9P_1 OK (MAHbakrtuS8) : arbres, rocher, buisson, bûche. 9/92 décors. Prochain (02:57) : G9P_2.
 - 20/11 03:02 : G9P_2 OK (MAHbav1qbBc). Fonds sombres internes conservés pour grotte/escalier/coffre (KEEP dans cut4.py, à compléter si besoin). 18/92 décors. Prochain (03:32) : G9P_3.
+- 20/11 03:40 : G9P_3 testé puis ANNULÉ : les 76 décors PNG (maison/cuisine/labo/arène) étaient déjà en pixel art plus fin → conservés, G9P_3..11 en skip. LOT 4 TERMINÉ → 0.9.47 livrée, artefact republié, cycles arrêtés.
