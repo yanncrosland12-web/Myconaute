@@ -74,7 +74,10 @@
    "SPRB_P:h_tableau_carte",
    "SPRB_P:h_tableau_trophee"
   ],
-  "status": "todo"
+  "status": "done",
+  "ref": "MAHbfN_hEHI",
+  "gen": "MAHbfEIpGlE",
+  "_b": 6.75
  },
  {
   "id": "H4_6",
