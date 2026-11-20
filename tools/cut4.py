@@ -12,6 +12,14 @@ out=json.load(open('lot4/px.json')) if os.path.exists('lot4/px.json') else {}
 for gid in sys.argv[1:]:
     it=byid[gid]; n=it.get('n',3); big=Image.open('raw/lot4_%s.png'%gid).convert('RGB'); S=big.width; cs=S/n
     tiles=[]
+    if not it.get('_b'):
+        bs=[]
+        for i in range(len(it['keys'])):
+            cell=big.crop((int((i%n)*cs),int((i//n)*cs),int((i%n+1)*cs),int((i//n+1)*cs)))
+            try: bs.append(native(*px2.cutout(cell,minhole=300 if n==3 else 150))[1])
+            except Exception: pass
+        it['_b']=float(np.median(bs)) if bs else None
+        print('ref pixel',it['_b'])
     for i,tk in enumerate(it['keys']):
         T,k=tk.split(':',1)
         cell=big.crop((int((i%n)*cs),int((i//n)*cs),int((i%n+1)*cs),int((i//n+1)*cs)))
