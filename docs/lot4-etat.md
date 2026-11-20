@@ -27,3 +27,4 @@ File : lot4/queue.json ; `python3 lot4/next.py` donne la prochaine tâche + prom
 - 19/11 23:05 : w2_ermite OK (MAHbZ40Aniw). Palier w2 → 0.9.45 construite, livrée, artefact republié. Prochain (23:31) : G16_2.
 - 19/11 23:36 : G16_2 OK (MAHbZxAp-_s), découpe améliorée (taille de pixel fixée si écart >12 %). 41/60 champignons. Prochain (00:06) : G16_3.
 - 20/11 00:10 : G16_3 OK (MAHbaNuI6Hk). 57/60 champignons. Prochain (00:40) : G16_4 (3 derniers champignons + objets).
+- 20/11 00:44 : G16_4 OK (MAHbaGGehHM). 60/60 champignons, 13/36 objets. Prochain (01:14) : G16_5.

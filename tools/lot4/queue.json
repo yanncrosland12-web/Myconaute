@@ -131,7 +131,9 @@
    "SPRB_I:dish_soupe_bois",
    "SPRB_I:dish_soupe_hallu"
   ],
-  "status": "todo"
+  "status": "done",
+  "ref": "MAHbaKODRTI",
+  "gen": "MAHbaGGehHM"
  },
  {
   "id": "G16_5",
