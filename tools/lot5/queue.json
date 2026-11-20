@@ -122,7 +122,10 @@
    "SPRB_P:h_plante_fougere",
    "SPRB_P:h_plante_bonsai"
   ],
-  "status": "todo"
+  "status": "done",
+  "ref": "MAHbfjevDgI",
+  "gen": "MAHbfgAfWxM",
+  "_b": 8.350000000000001
  },
  {
   "id": "H4_9",
