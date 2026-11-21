@@ -55,8 +55,12 @@ if os.path.exists('lot5/theme2.css'):
 if os.path.exists('lot4/pxui.js'):
     k=s.rfind('</body>'); s=s[:k]+'<script>'+open('lot4/pxui.js').read()+'</script>'+s[k:]
     k=s.rfind('</body>'); s=s[:k]+'<script>'+open('lot5/save.js').read()+'</script>'+s[k:]
+    k=s.rfind('</body>'); s=s[:k]+'<script>'+open('lot5/bgpx.js').read()+'</script>'+s[k:]
     # sprites à retourner (dos contre le mur) : miroir horizontal dans la même boîte
     FLIP=['l_biblio']
+    # recalage de sprites : [dx, dy, échelle] (échelle ancrée en bas au centre)
+    ADJ={'h_lit_baldaquin':[4,6,0.86]}
+    k=s.rfind('</body>'); s=s[:k]+'<script>(function(A){for(const k in A){const im=document.getElementById("dp-"+k);if(!im)continue;const [dx,dy,sc]=A[k],x=+im.getAttribute("x"),y=+im.getAttribute("y"),w=+im.getAttribute("width"),h=+im.getAttribute("height"),cx=x+w/2,by=y+h;im.setAttribute("transform","translate("+(dx+cx)+" "+(dy+by)+") scale("+sc+") translate("+(-cx)+" "+(-by)+")");}})(%s);</script>'%json.dumps(ADJ)+s[k:]
     k=s.rfind('</body>'); s=s[:k]+'<script>(function(L){for(const k of L){const im=document.getElementById("dp-"+k);if(!im)continue;const x=+im.getAttribute("x"),w=+im.getAttribute("width");im.setAttribute("transform","translate("+(2*x+w)+" 0) scale(-1 1)");}})(%s);</script>'%json.dumps(FLIP)+s[k:]
 s,n=re.subn(r'GAME_VERSION = "0\.9\.\d+[^"]*"','GAME_VERSION = "%s test"'%ver,s); assert n==1
 open('Myconautes-%s.html'%ver,'w').write(s); print('ok',ver,len(s))

@@ -9,6 +9,9 @@ html body{background-color:var(--loam);background-image:url(data:image/png;base6
 .slot,.item{background:#e9cf98!important;border:3px solid #7a4a22!important;color:#3b2412}
 .bar{border-width:3px 0 0 0!important}.hud{border-width:0 0 3px 0!important}
 .tab.on{border-radius:3px!important;background:var(--rock)!important;box-shadow:inset 0 0 0 2px #b8854c!important}
+/* 0.9.54 : jauge d'énergie en pixels */
+html body .nrg i{border-radius:0;transform:none;width:8px;height:14px;border:2px solid var(--line);box-shadow:inset 0 2px 0 rgba(255,255,255,.28),inset 0 -2px 0 rgba(0,0,0,.28);image-rendering:pixelated}
+html body .nrg i.on{border-color:#1e3a10}
 </style></head><body>
 <meta charset="utf-8">
 <title>Myconautes</title>
@@ -7667,7 +7670,7 @@ function serveCmd() {
     leave: (k) => customerLeave(a, k)
   }) }]);
 }
-const GAME_VERSION = "0.9.53 test";
+const GAME_VERSION = "0.9.54 test";
 const CAP = { db: null, user: null, comments: null, uid: null, owner: false, ready: false };
 const FB = { rating: 0, cat: "", sent: false };
 const FB_CATS = ["Bug", "Équilibrage", "Idée", "Graphismes", "Autre"];
@@ -13150,7 +13153,7 @@ else safeBoot();
     const f=document.createDocumentFragment();let last=0;t.replace(EMO,(m,_,off)=>{if(off>last)f.appendChild(document.createTextNode(t.slice(last,off)));f.appendChild(img(emoUrl(m)));last=off+m.length;});
     if(last<t.length)f.appendChild(document.createTextNode(t.slice(last)));p.replaceChild(f,n);}
   function svgIcon(s){if(s.dataset.px||s.closest('#world,.scene,#b-arena,.nopx'))return;const W=parseFloat(s.getAttribute('width')||s.getBoundingClientRect().width||0);if(!W||W>56)return;
-    if(s.querySelector('use,image,animate,mask'))return; // lune animée, sprites : on laisse
+    if(s.querySelector('use,image,animate'))return; // sprites : on laisse (la lune à masque est pixelisée)
     const key=s.outerHTML;let u=cache.get(key);
     if(!u){const vb=s.getAttribute('viewBox')||'0 0 24 24';const x=s.cloneNode(true);x.setAttribute('xmlns','http://www.w3.org/2000/svg');x.setAttribute('width','96');x.setAttribute('height','96');x.setAttribute('viewBox',vb);
       const im=new Image();const data='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(x.outerHTML);s.dataset.px='1';
@@ -13283,4 +13286,68 @@ else safeBoot();
   if (!localAt() && lsGet(KEY_RUN)) stamp();
   pullCloud();
 })();
-</script><script>(function(L){for(const k of L){const im=document.getElementById("dp-"+k);if(!im)continue;const x=+im.getAttribute("x"),w=+im.getAttribute("width");im.setAttribute("transform","translate("+(2*x+w)+" 0) scale(-1 1)");}})(["l_biblio"]);</script></body></html>
+</script><script>/* Fond d'arène de combat en pixel art : le SVG vectoriel est rendu en basse résolution, palette réduite, affiché pixelisé */
+(function () {
+  if (typeof battleBg !== "function") return;
+  const W = 390, H = 470, F = 2.6, CW = Math.round(W / F), CH = Math.round(H / F);
+  let tok = 0;
+  const _bb = battleBg;
+  battleBg = function () {
+    const s = _bb.apply(this, arguments), t = ++tok;
+    setTimeout(() => pxBattle(s, t), 0);
+    return s;
+  };
+  function defsFor(svg) {
+    const seen = new Set(), out = [];
+    const re = /(?:href="#|url\(#)([\w-]+)/g;
+    const walk = (txt) => {
+      let m; re.lastIndex = 0;
+      const ids = [];
+      while ((m = re.exec(txt))) ids.push(m[1]);
+      for (const id of ids) {
+        if (seen.has(id)) continue; seen.add(id);
+        if (txt.indexOf('id="' + id + '"') >= 0) continue;
+        const el = document.getElementById(id);
+        if (!el) continue;
+        const h = el.outerHTML; out.push(h); walk(h);
+      }
+    };
+    walk(svg);
+    return out.join("");
+  }
+  function pxBattle(svg, t) {
+    try {
+      const host = document.getElementById("b-bg");
+      if (!host) return;
+      let s = svg.replace("<svg ", '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="' + W + '" height="' + H + '" ');
+      const d = defsFor(svg);
+      if (d) s = s.replace(/(<svg[^>]*>)/, "$1<defs>" + d + "</defs>");
+      const url = URL.createObjectURL(new Blob([s], { type: "image/svg+xml" }));
+      const img = new Image();
+      img.onload = () => {
+        URL.revokeObjectURL(url);
+        if (t !== tok) return;
+        const c = document.createElement("canvas"); c.width = CW; c.height = CH;
+        const x = c.getContext("2d"); x.imageSmoothingEnabled = true;
+        x.drawImage(img, 0, 0, CW, CH);
+        const id = x.getImageData(0, 0, CW, CH), p = id.data;
+        // palette réduite + léger tramage ordonné 2x2 pour l'effet pixel art
+        const B = [[0, 2], [3, 1]];
+        for (let yy = 0; yy < CH; yy++) for (let xx = 0; xx < CW; xx++) {
+          const i = (yy * CW + xx) * 4, o = B[yy & 1][xx & 1] - 1.5;
+          for (let k = 0; k < 3; k++) { const v = p[i + k] + o; p[i + k] = Math.max(0, Math.min(255, Math.round(v / 14) * 14)); }
+          p[i + 3] = 255;
+        }
+        x.putImageData(id, 0, 0);
+        c.className = "b-bgpx";
+        c.style.cssText = "position:absolute;inset:0;width:100%;height:100%;object-fit:cover;image-rendering:pixelated;image-rendering:crisp-edges";
+        const h2 = document.getElementById("b-bg");
+        if (!h2) return;
+        h2.innerHTML = ""; h2.appendChild(c);
+      };
+      img.onerror = () => URL.revokeObjectURL(url);
+      img.src = url;
+    } catch (e) {}
+  }
+})();
+</script><script>(function(A){for(const k in A){const im=document.getElementById("dp-"+k);if(!im)continue;const [dx,dy,sc]=A[k],x=+im.getAttribute("x"),y=+im.getAttribute("y"),w=+im.getAttribute("width"),h=+im.getAttribute("height"),cx=x+w/2,by=y+h;im.setAttribute("transform","translate("+(dx+cx)+" "+(dy+by)+") scale("+sc+") translate("+(-cx)+" "+(-by)+")");}})({"h_lit_baldaquin": [4, 6, 0.86]});</script><script>(function(L){for(const k of L){const im=document.getElementById("dp-"+k);if(!im)continue;const x=+im.getAttribute("x"),w=+im.getAttribute("width");im.setAttribute("transform","translate("+(2*x+w)+" 0) scale(-1 1)");}})(["l_biblio"]);</script></body></html>

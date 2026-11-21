@@ -19,7 +19,7 @@
     const f=document.createDocumentFragment();let last=0;t.replace(EMO,(m,_,off)=>{if(off>last)f.appendChild(document.createTextNode(t.slice(last,off)));f.appendChild(img(emoUrl(m)));last=off+m.length;});
     if(last<t.length)f.appendChild(document.createTextNode(t.slice(last)));p.replaceChild(f,n);}
   function svgIcon(s){if(s.dataset.px||s.closest('#world,.scene,#b-arena,.nopx'))return;const W=parseFloat(s.getAttribute('width')||s.getBoundingClientRect().width||0);if(!W||W>56)return;
-    if(s.querySelector('use,image,animate,mask'))return; // lune animée, sprites : on laisse
+    if(s.querySelector('use,image,animate'))return; // sprites : on laisse (la lune à masque est pixelisée)
     const key=s.outerHTML;let u=cache.get(key);
     if(!u){const vb=s.getAttribute('viewBox')||'0 0 24 24';const x=s.cloneNode(true);x.setAttribute('xmlns','http://www.w3.org/2000/svg');x.setAttribute('width','96');x.setAttribute('height','96');x.setAttribute('viewBox',vb);
       const im=new Image();const data='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(x.outerHTML);s.dataset.px='1';
