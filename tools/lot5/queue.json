@@ -185,7 +185,10 @@
    "SPRB_P:k_plan_marbre",
    "SPRB_P:k_plan_etal"
   ],
-  "status": "todo"
+  "status": "done",
+  "ref": "MAHbgPfL0dY",
+  "gen": "MAHbgDjc8tk",
+  "_b": 9.9
  },
  {
   "id": "R4_4",
