@@ -19,3 +19,4 @@ Palier (tout done) : build.py (injecte lot6/bg via bgpx.js) → err/smoke + capt
 - 21/11 17:4x : retour Yann → bâton vectoriel (TOOLS) affiché par-dessus l'attaque pixel en combat : supprimé (index.html en ligne + build.py).
 - 21/11 17:3x : b4 (repaire des brigands) gen MAHbkRH_NJY → OK.
 - 21/11 18:0x : 0.9.55 publiée en avance (événements nuit/réveil/jour + fonds b0–b4). Le palier de fin de lot 6 (b5 + grotte) sera la 0.9.56.
+- 21/11 18:xx : 0.9.56 publiée (pack profondeur). Fin du lot 6 (b5 + grotte) → version suivante disponible (0.9.57+).

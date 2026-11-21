@@ -65,9 +65,13 @@ if os.path.exists('lot4/pxui.js'):
     # combat : plus d'arme vectorielle par-dessus le sprite pixel d'attaque
     s=s.replace('held.innerHTML = o.held ? TOOLS[o.held] : "";','held.innerHTML = o.held && !a.node.closest("#battle") ? TOOLS[o.held] : "";')
     # 0.9.55 : plus d'événements (nuit + réveil + jour)
-    s=s.replace('const r = runEvent();\n  if (r) add(r.t, r.k);','const r = runEvent();\n  if (r) add(r.t, r.k);\n  const r2 = typeof nightBonus === "function" ? nightBonus() : null;\n  if (r2) add(r2.t, r2.k);',1)
+    s=s.replace('const r = runEvent();\n  if (r) add(r.t, r.k);','const r = runEvent();\n  if (r) add(r.t, r.k);\n  const r2 = typeof nightBonus === "function" ? nightBonus() : null;\n  if (r2) add(r2.t, r2.k);\n  (typeof nightExtras === "function" ? nightExtras() : []).forEach((x) => add(x.t, x.k));',1)
     s=s.replace('S.dayEvent = !first && rnd() < 0.5 ? rollDayEvent() : null;','S.dayEvent = !first && rnd() < 0.65 ? rollDayEvent() : null;',1)
     k=s.rfind('</body>'); s=s[:k]+'<script>'+open('lot7/events.js').read()+'</script>'+s[k:]
+    # 0.9.56 : profondeur (qualité, réputation, commandes, traits, défis)
+    s=s.replace('.concat(i.lunar ? "☾ " : "", "~")','.concat(i.lunar ? "☾ " : "", typeof qStars === "function" ? qStars(i) + " " : "", "~")',1)
+    s=s.replace('"Récolté : <b>".concat(SP[sp].n, "</b>").concat(it.shiny ? " ✦ Brillant !" : "", ".")','"Récolté : <b>".concat(SP[sp].n, "</b>").concat(typeof qStars === "function" ? " " + qStars(it) : "").concat(it.shiny ? " ✦ Brillant !" : "", ".")',1)
+    k=s.rfind('</body>'); s=s[:k]+'<script>'+open('lot8/depth.js').read()+'</script>'+s[k:]
     # sprites à retourner (dos contre le mur) : miroir horizontal dans la même boîte
     FLIP=['l_biblio']
     # recalage de sprites : [dx, dy, échelle] (échelle ancrée en bas au centre)
