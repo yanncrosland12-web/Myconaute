@@ -1,5 +1,5 @@
 """Construit Myconautes-<ver>.html = 0.9.37 + chars_px3.json (persos) + lot4/px.json (assets). Usage: python3 build.py 0.9.44"""
-import json,re,sys,os
+import os,json,re,sys,os
 ver=sys.argv[1]
 s=open('Myconautes-0.9.37.html').read()
 d=json.load(open('chars_px3.json'))
@@ -55,7 +55,9 @@ if os.path.exists('lot5/theme2.css'):
 if os.path.exists('lot4/pxui.js'):
     k=s.rfind('</body>'); s=s[:k]+'<script>'+open('lot4/pxui.js').read()+'</script>'+s[k:]
     k=s.rfind('</body>'); s=s[:k]+'<script>'+open('lot5/save.js').read()+'</script>'+s[k:]
-    k=s.rfind('</body>'); s=s[:k]+'<script>'+open('lot5/bgpx.js').read()+'</script>'+s[k:]
+    import base64,glob as _g
+    BG={os.path.basename(f)[:-4]:'data:image/png;base64,'+base64.b64encode(open(f,'rb').read()).decode() for f in sorted(_g.glob('lot6/bg/*.png')) if not os.path.basename(f).startswith('prev_')}
+    k=s.rfind('</body>'); s=s[:k]+'<script>window.BGPX='+json.dumps(BG)+';'+open('lot5/bgpx.js').read()+'</script>'+s[k:]
     # sprites à retourner (dos contre le mur) : miroir horizontal dans la même boîte
     FLIP=['l_biblio']
     # recalage de sprites : [dx, dy, échelle] (échelle ancrée en bas au centre)

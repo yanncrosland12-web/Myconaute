@@ -27,10 +27,25 @@
     walk(svg);
     return out.join("");
   }
+  function bgKey() {
+    try {
+      if (S.loc === "grotte" && S.forest && S.forest.grotte) return "cave";
+      return "b" + ((S.forest && S.forest.b) || 0);
+    } catch (e) { return null; }
+  }
+  function painted(host) {
+    const P = window.BGPX || {}, k = bgKey();
+    if (!k || !P[k]) return false;
+    let dark = 0, hue = 0;
+    if (k === "cave") { const d = (S.forest && S.forest.depth) || 1; dark = Math.min(0.45, 0.05 + d * 0.04); hue = ((d - 1) % 5) * 28; }
+    host.innerHTML = '<img class="b-bgpx" alt="" src="' + P[k] + '" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;image-rendering:pixelated;image-rendering:crisp-edges;' + (hue ? "filter:hue-rotate(" + hue + "deg);" : "") + '">' + (dark ? '<div style="position:absolute;inset:0;background:#000;opacity:' + dark.toFixed(2) + '"></div>' : "");
+    return true;
+  }
   function pxBattle(svg, t) {
     try {
       const host = document.getElementById("b-bg");
       if (!host) return;
+      if (painted(host)) return;
       let s = svg.replace("<svg ", '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="' + W + '" height="' + H + '" ');
       const d = defsFor(svg);
       if (d) s = s.replace(/(<svg[^>]*>)/, "$1<defs>" + d + "</defs>");
