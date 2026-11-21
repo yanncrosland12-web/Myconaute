@@ -12,7 +12,7 @@
     const grp = (d) => svg.querySelector('g[data-d="' + d + '"]');
     const until = (start, stop) => { if (!start) return []; const sib = [...start.parentNode.children], out = []; for (let i = sib.indexOf(start); i < sib.length; i++) { if (stop(sib[i])) break; out.push(sib[i]); } return out; };
     if (room === "shop") {
-      const c = grp("4.35"); if (c) mark("s_comptoir", [...c.children].slice(0, -1));
+      const c = grp("4.35"); if (c) mark("s_comptoir", [...c.children]);
       const cr = grp("3"); if (cr) mark("s_caisse", [...cr.children].filter((e) => /^(polygon|path|rect)$/.test(e.tagName)));
       mark("s_tapis", all.filter((e) => e.tagName === "rect" && ((A(e, "fill") === "#8e2b3a" && A(e, "x") === "58") || (A(e, "x") === "63" && A(e, "y") === "180"))));
       mark("s_trappe", all.filter((e) => (e.tagName === "rect" && ((A(e, "x") === "5" && A(e, "y") === "5") || (A(e, "x") === "46" && A(e, "y") === "6"))) || (e.tagName === "path" && (A(e, "d") || "").startsWith("M12 10 V45"))));

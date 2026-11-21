@@ -15,10 +15,10 @@ for gid in _a:
     it=byid[gid]; n=2; big=Image.open('raw/lot9_%s.png'%gid).convert('RGB'); cs=big.width/n; tiles=[]
     for i,k in enumerate(it['keys']):
         cell=big.crop((int((i%n)*cs),int((i//n)*cs),int((i%n+1)*cs),int((i//n+1)*cs)))
-        rgb,al=px2.cutout(cell,thr=THR.get(k,30),minhole=(10**9 if k in KEEP else 150))
+        rgb,al=px2.cutout(cell,thr=THR.get(k,30),minhole=10**9)
         try: o,b=native(rgb,al)
         except Exception: o,b=None,0
-        if o is None or b<4 or b>14: o,b=native(rgb,al,hint=7,fixed=True)
+        if o is None or b<5 or b>11: o,b=native(rgb,al,hint=8,fixed=True)
         g=Image.fromarray(o,'RGBA'); g=g.crop(g.getbbox())
         bx=B[k]; buf=io.BytesIO(); g.save(buf,'PNG',optimize=True)
         out[k]=[base64.b64encode(buf.getvalue()).decode(),bx['x'],bx['y'],bx['w'],bx['h']]

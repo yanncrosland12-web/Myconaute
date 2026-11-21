@@ -19,3 +19,4 @@ Palier (DONE ALL) : build.py version suivante → err/smoke + capture boutique/g
 ## Journal
 - 21/11 18:2x : pipeline prêt (capture, planches, furn.js, build.py). 6 cycles à partir de 19:11 UTC (après la grotte du lot 6 à 18:41).
 - 21/11 22:2x : cycle de 19:11 parti tard (session inactive) ; ce cycle a servi à la grotte (lot 6). L9_1 au prochain cycle (~22:52).
+- 21/11 22:5x : L9_1 (comptoir, caisse, bureau, comptoir guilde) ref MAHblmkhzls gen MAHbltyIMPw → découpé ; cut9 garde désormais tous les pixels sombres intérieurs (planches ajourées sinon), taille de pixel 5–11 sinon forcée à 8 ; pièces du comptoir incluses dans le sprite ; « GROS » éclairci (build.py). Rendu boutique/guilde OK.
