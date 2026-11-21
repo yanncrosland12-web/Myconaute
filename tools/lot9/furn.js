@@ -5,6 +5,8 @@
   const NS = "http://www.w3.org/2000/svg";
   /* sprites dessinés de face : posés dans le repère du mur (boîte locale x,y,w,h) */
   const LOC = { g_cheminee: [146, 54, 54, 96] };
+  /* ombres de contact (lot 10) pour les meubles posés au sol */
+  const SHD = { s_comptoir: { f: 0.96, o: 0.6 }, s_caisse: { f: 0.96, o: 0.6 }, g_bureau: { f: 0.96, o: 0.6 }, g_comptoir: { f: 0.96, o: 0.6 }, g_tonneau: { f: 0.85, d: 0.5, o: 0.6 } };
   function marks(svg, room) {
     const all = [...svg.querySelectorAll("*")], M = {};
     const A = (e, k) => e.getAttribute(k);
@@ -72,6 +74,12 @@
         const m = L ? svg.createSVGMatrix() : ctm(first, svg).inverse();
         if (!(m.a === 1 && m.b === 0 && m.c === 0 && m.d === 1 && m.e === 0 && m.f === 0)) im.setAttribute("transform", "matrix(" + [m.a, m.b, m.c, m.d, m.e, m.f].map((v) => +v.toFixed(5)).join(" ") + ")");
         par.insertBefore(im, first);
+        const sh = SHD[k];
+        if (sh && typeof groundShadow === "function") {
+          const g = doc.createElementNS(NS, "g");
+          g.innerHTML = groundShadow(d[1] + d[3] / 2, d[2] + d[4], d[3], sh);
+          par.insertBefore(g.firstChild, im);
+        }
         els.forEach((e) => e.remove()); n++;
       }
       if (!n) return str;

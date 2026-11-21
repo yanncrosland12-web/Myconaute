@@ -74,6 +74,7 @@ if os.path.exists('lot4/pxui.js'):
     k=s.rfind('</body>'); s=s[:k]+'<script>'+open('lot8/depth.js').read()+'</script>'+s[k:]
     k=s.rfind('</body>'); s=s[:k]+'<script>'+open('lot8/culture.js').read()+'</script>'+s[k:]
     s=s.replace('fill="#3a2718" font-weight="800">GROS','fill="#f0e4ca" font-weight="800" stroke="#3a2718" stroke-width=".6" paint-order="stroke">GROS',1)
+    k=s.rfind('</body>'); s=s[:k]+'<script>'+open('lot10/ground.js').read()+'</script>'+s[k:]
     if os.path.exists('lot9/px.json'):
         k=s.rfind('</body>'); s=s[:k]+'<script>window.FURNPX='+open('lot9/px.json').read()+';</script><script>'+open('lot9/furn.js').read()+'</script>'+s[k:]
     # sprites à retourner (dos contre le mur) : miroir horizontal dans la même boîte
