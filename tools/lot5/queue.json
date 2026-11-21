@@ -281,7 +281,10 @@
    "SPRB_P:a_banniere_rouge",
    "SPRB_P:a_banniere_bleue"
   ],
-  "status": "todo"
+  "status": "done",
+  "ref": "MAHbg79UrBQ",
+  "gen": "MAHbg4UdUu8",
+  "_b": 9.049999999999999
  },
  {
   "id": "R4_10",
