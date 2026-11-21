@@ -16,3 +16,5 @@ Palier (tout done) : build.py (injecte lot6/bg via bgpx.js) → err/smoke + capt
 - 21/11 12:3x : b1 (sous-bois sombre) gen MAHbjDLyV-g → OK.
 - 21/11 13:0x : b2 (bois de bouleaux) gen MAHbjJ4nRnE → OK.
 - 21/11 17:0x : b3 (marais brumeux) gen MAHbkSfnYRE → OK.
+- 21/11 17:4x : retour Yann → bâton vectoriel (TOOLS) affiché par-dessus l'attaque pixel en combat : supprimé (index.html en ligne + build.py).
+- 21/11 17:3x : b4 (repaire des brigands) gen MAHbkRH_NJY → OK.
