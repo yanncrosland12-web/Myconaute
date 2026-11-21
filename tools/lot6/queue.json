@@ -57,8 +57,14 @@
  },
  {
   "id": "b5",
-  "status": "todo",
-  "prompt": "Pixel art JRPG battle background, Stardew Valley-like 16-bit cozy pixel art (crisp hard square pixels, limited palette, flat 2-3 tone shading, no anti-aliasing). Seen from a slightly high 3/4 angle: Fairy grove at twilight: blue-violet trees with glowing crystal leaves, floating sparkles, luminous mushrooms as a thin backdrop band in the top 20% of the image only; below it an open natural clearing whose flat ground fills the lower 80% of the image. Keep the whole ground area open, even and uncluttered (no paths, no patches, no circles), details only along the edges. Keep all important details within the central 80% width. No characters, no creatures, no UI, no text, no frame, no border."
+  "status": "done",
+  "prompt": "Pixel art JRPG battle background, Stardew Valley-like 16-bit cozy pixel art (crisp hard square pixels, limited palette, flat 2-3 tone shading, no anti-aliasing). Seen from a slightly high 3/4 angle: Fairy grove at twilight: blue-violet trees with glowing crystal leaves, floating sparkles, luminous mushrooms as a thin backdrop band in the top 20% of the image only; below it an open natural clearing whose flat ground fills the lower 80% of the image. Keep the whole ground area open, even and uncluttered (no paths, no patches, no circles), details only along the edges. Keep all important details within the central 80% width. No characters, no creatures, no UI, no text, no frame, no border.",
+  "px": 6.6,
+  "size": [
+   129,
+   155
+  ],
+  "gen": "MAHbkoxtUZs"
  },
  {
   "id": "cave",
