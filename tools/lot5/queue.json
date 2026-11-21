@@ -297,7 +297,10 @@
    "SPRB_P:a_mannequin",
    "SPRB_P:a_rochers"
   ],
-  "status": "todo"
+  "status": "done",
+  "ref": "MAHbhP9Y_PY",
+  "gen": "MAHbhEQIAeQ",
+  "_b": 12.0
  },
  {
   "id": "R4_11",
