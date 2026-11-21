@@ -15,3 +15,4 @@ Palier (tout done) : build.py (injecte lot6/bg via bgpx.js) → err/smoke + capt
 - 21/11 13:0x : retour Yann « persos pas sur leurs emplacements » → b0 refait (MAHbixvJzD0) sol uniforme, bande de décor réduite au 20 % du haut ; prompts du lot mis à jour pareil. Capture OK : persos posés au sol.
 - 21/11 12:3x : b1 (sous-bois sombre) gen MAHbjDLyV-g → OK.
 - 21/11 13:0x : b2 (bois de bouleaux) gen MAHbjJ4nRnE → OK.
+- 21/11 17:0x : b3 (marais brumeux) gen MAHbkSfnYRE → OK.
