@@ -72,6 +72,7 @@ if os.path.exists('lot4/pxui.js'):
     s=s.replace('.concat(i.lunar ? "☾ " : "", "~")','.concat(i.lunar ? "☾ " : "", typeof qStars === "function" ? qStars(i) + " " : "", "~")',1)
     s=s.replace('"Récolté : <b>".concat(SP[sp].n, "</b>").concat(it.shiny ? " ✦ Brillant !" : "", ".")','"Récolté : <b>".concat(SP[sp].n, "</b>").concat(typeof qStars === "function" ? " " + qStars(it) : "").concat(it.shiny ? " ✦ Brillant !" : "", ".")',1)
     k=s.rfind('</body>'); s=s[:k]+'<script>'+open('lot8/depth.js').read()+'</script>'+s[k:]
+    k=s.rfind('</body>'); s=s[:k]+'<script>'+open('lot8/culture.js').read()+'</script>'+s[k:]
     # sprites à retourner (dos contre le mur) : miroir horizontal dans la même boîte
     FLIP=['l_biblio']
     # recalage de sprites : [dx, dy, échelle] (échelle ancrée en bas au centre)

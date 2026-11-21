@@ -130,7 +130,7 @@
       ] },
     { id: "etoile", w: () => cellsList().some((o) => o.cell.p && !o.cell.p.cr) ? 5 : 0, t: "L'étoile tombée", d: "Un éclat d'étoile encore tiède est tombé dans ta cave cette nuit. Il pulse doucement.",
       c: [
-        { l: "Le planter près d'un champignon", run: () => { const o = pick(cellsList().filter((o2) => o2.cell.p && !o2.cell.p.cr)); o.cell.p.cr = true; return "La lumière s'infiltre dans ta " + SP[o.cell.p.sp].n + " : elle sera <b>Brillante</b> à la récolte."; } },
+        { l: "Le planter près d'un champignon", run: () => { const o = pick(cellsList().filter((o2) => o2.cell.p && !o2.cell.p.cr)); if (!o) { gainEclats(4); return "Faute de champignon à baigner de lumière, tu le brises en <b>4 éclats</b>."; } o.cell.p.cr = true; return "La lumière s'infiltre dans ta " + SP[o.cell.p.sp].n + " : elle sera <b>Brillante</b> à la récolte."; } },
         { l: "Le garder (éclats)", run: () => { gainEclats(4); return "Tu le brises en <b>4 éclats</b> scintillants."; } }
       ] },
     { id: "garde", w: () => S.day >= 3 ? 5 : 0, look: FOLK[5].look, t: "Le contrôle de Thibaut", d: "Thibaut le garde fronce les sourcils : « Contrôle des caves. Tout est en règle, j'espère ? »",
