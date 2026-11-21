@@ -14,10 +14,11 @@ Textes, pièces, champignons des bocaux et flamme restent dynamiques (vectoriels
 2. create-upload-url → curl POST la grille → generate-image refs [upload, MAHbcpjvijc] SQUARE_1_1 → noter ref/gen dans lot9/queue.json (status gen).
 3. Board DAHZbAEO13g page 1 : read-design open_transaction → update_fill locator PBrD7Z5vP6cKfvPb-LBTFJdf3Dw9fkBqG → commit → export png pro 1024 pages [1] → `python3 dl.py '{"1":"lot9_<id>"}' <tag>` → `python3 lot9/cut9.py <id>` → vérifier lot9/prev_<id>.png.
 4. Noter ici ; copier lot9/ + lot9-etat.md dans /home/claude/myconaute/tools/ ; send_later 30 min sauf DONE ALL.
-Palier (DONE ALL) : build.py version suivante → err/smoke + capture boutique/guilde (scratchpad/rooms9.js <html> <prefix>) → Pages (index.html), artefact B75cgjd2BamMdnEhEqUDNq, mémoire, message à Yann.
+Palier (DONE ALL) : build.py version suivante (0.9.60 : la 0.9.59 est sortie avec les ombres de contact ; build test = 0.9.60t) → err/smoke + capture boutique/guilde (scratchpad/rooms9.js <html> <prefix>) → Pages (index.html), artefact B75cgjd2BamMdnEhEqUDNq, mémoire, message à Yann.
 
 ## Journal
 - 21/11 18:2x : pipeline prêt (capture, planches, furn.js, build.py). 6 cycles à partir de 19:11 UTC (après la grotte du lot 6 à 18:41).
 - 21/11 22:2x : cycle de 19:11 parti tard (session inactive) ; ce cycle a servi à la grotte (lot 6). L9_1 au prochain cycle (~22:52).
 - 21/11 22:5x : L9_1 (comptoir, caisse, bureau, comptoir guilde) ref MAHblmkhzls gen MAHbltyIMPw → découpé ; cut9 garde désormais tous les pixels sombres intérieurs (planches ajourées sinon), taille de pixel 5–11 sinon forcée à 8 ; pièces du comptoir incluses dans le sprite ; « GROS » éclairci (build.py). Rendu boutique/guilde OK.
 - 21/11 23:2x : L9_2 (tapis, trappe, tonneau, cheminée) ref MAHblzgEp3A gen MAHbl8v2QJo → découpé. Cheminée dessinée de face → furn.js LOC : posée dans le repère du mur (146,54,54,96), rendu OK.
+- 22/11 23:4x : demande Yann « les décors flottent » → lot 10 (lot10/ground.js) : ombres de contact sous tous les objets au sol (y compris meubles lot 9 via furn.js SHD). 0.9.59 publiée. PALIER DU LOT 9 = 0.9.60 (pas 0.9.59).
