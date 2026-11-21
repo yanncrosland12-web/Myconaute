@@ -58,6 +58,10 @@ if os.path.exists('lot4/pxui.js'):
     import base64,glob as _g
     BG={os.path.basename(f)[:-4]:'data:image/png;base64,'+base64.b64encode(open(f,'rb').read()).decode() for f in sorted(_g.glob('lot6/bg/*.png')) if not os.path.basename(f).startswith('prev_')}
     k=s.rfind('</body>'); s=s[:k]+'<script>window.BGPX='+json.dumps(BG)+';'+open('lot5/bgpx.js').read()+'</script>'+s[k:]
+    # appli installable (GitHub Pages) : manifeste + service worker, ignorés ailleurs
+    PWA='<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#2a1c12"><meta name="mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="icon-192.png">'
+    s=s.replace('</head>',PWA+'</head>',1)
+    k=s.rfind('</body>'); s=s[:k]+'<script>if("serviceWorker" in navigator&&/github\\.io$/.test(location.hostname))navigator.serviceWorker.register("sw.js").catch(()=>{});</script>'+s[k:]
     # sprites à retourner (dos contre le mur) : miroir horizontal dans la même boîte
     FLIP=['l_biblio']
     # recalage de sprites : [dx, dy, échelle] (échelle ancrée en bas au centre)
