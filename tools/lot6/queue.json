@@ -2,42 +2,43 @@
  {
   "id": "b0",
   "status": "done",
-  "prompt": "Pixel art JRPG battle background, Stardew Valley-like 16-bit cozy pixel art (crisp hard square pixels, limited palette, flat 2-3 tone shading, no anti-aliasing). Seen from a slightly high 3/4 angle: Golden sunny forest clearing: warm sunlight beams through oak trees, flowers and tall grass in the top third of the image as a backdrop; below it an open natural clearing whose flat ground fills the lower 60% of the image. Keep the whole ground area open, even and uncluttered (no paths, no patches, no circles), details only along the edges. Keep all important details within the central 80% width. No characters, no creatures, no UI, no text, no frame, no border.",
-  "gen": "MAHbi0KywaM",
+  "prompt": "Pixel art JRPG battle background, Stardew Valley-like 16-bit cozy pixel art (crisp hard square pixels, limited palette, flat 2-3 tone shading, no anti-aliasing). Seen from a slightly high 3/4 angle: Golden sunny forest clearing: warm sunlight beams through oak trees, flowers and tall grass as a thin backdrop band in the top 20% of the image only; below it an open natural clearing whose flat ground fills the lower 80% of the image. Keep the whole ground area open, even and uncluttered (no paths, no patches, no circles), details only along the edges. Keep all important details within the central 80% width. No characters, no creatures, no UI, no text, no frame, no border.",
   "px": 6.6,
   "size": [
    129,
    155
-  ]
+  ],
+  "old": "MAHbi0KywaM",
+  "gen": "MAHbixvJzD0"
  },
  {
   "id": "b1",
   "status": "todo",
-  "prompt": "Pixel art JRPG battle background, Stardew Valley-like 16-bit cozy pixel art (crisp hard square pixels, limited palette, flat 2-3 tone shading, no anti-aliasing). Seen from a slightly high 3/4 angle: Dark pine undergrowth: dense dark fir trees, ferns, thin mist, dim cool light in the top third of the image as a backdrop; below it an open natural clearing whose flat ground fills the lower 60% of the image. Keep the whole ground area open, even and uncluttered (no paths, no patches, no circles), details only along the edges. Keep all important details within the central 80% width. No characters, no creatures, no UI, no text, no frame, no border."
+  "prompt": "Pixel art JRPG battle background, Stardew Valley-like 16-bit cozy pixel art (crisp hard square pixels, limited palette, flat 2-3 tone shading, no anti-aliasing). Seen from a slightly high 3/4 angle: Dark pine undergrowth: dense dark fir trees, ferns, thin mist, dim cool light as a thin backdrop band in the top 20% of the image only; below it an open natural clearing whose flat ground fills the lower 80% of the image. Keep the whole ground area open, even and uncluttered (no paths, no patches, no circles), details only along the edges. Keep all important details within the central 80% width. No characters, no creatures, no UI, no text, no frame, no border."
  },
  {
   "id": "b2",
   "status": "todo",
-  "prompt": "Pixel art JRPG battle background, Stardew Valley-like 16-bit cozy pixel art (crisp hard square pixels, limited palette, flat 2-3 tone shading, no anti-aliasing). Seen from a slightly high 3/4 angle: Birch wood: white birch trunks with yellow-green leaves, soft daylight, clover in the top third of the image as a backdrop; below it an open natural clearing whose flat ground fills the lower 60% of the image. Keep the whole ground area open, even and uncluttered (no paths, no patches, no circles), details only along the edges. Keep all important details within the central 80% width. No characters, no creatures, no UI, no text, no frame, no border."
+  "prompt": "Pixel art JRPG battle background, Stardew Valley-like 16-bit cozy pixel art (crisp hard square pixels, limited palette, flat 2-3 tone shading, no anti-aliasing). Seen from a slightly high 3/4 angle: Birch wood: white birch trunks with yellow-green leaves, soft daylight, clover as a thin backdrop band in the top 20% of the image only; below it an open natural clearing whose flat ground fills the lower 80% of the image. Keep the whole ground area open, even and uncluttered (no paths, no patches, no circles), details only along the edges. Keep all important details within the central 80% width. No characters, no creatures, no UI, no text, no frame, no border."
  },
  {
   "id": "b3",
   "status": "todo",
-  "prompt": "Pixel art JRPG battle background, Stardew Valley-like 16-bit cozy pixel art (crisp hard square pixels, limited palette, flat 2-3 tone shading, no anti-aliasing). Seen from a slightly high 3/4 angle: Misty swamp: weeping willows, murky ponds with lily pads, reeds, thick pale fog in the top third of the image as a backdrop; below it an open natural clearing whose flat ground fills the lower 60% of the image. Keep the whole ground area open, even and uncluttered (no paths, no patches, no circles), details only along the edges. Keep all important details within the central 80% width. No characters, no creatures, no UI, no text, no frame, no border."
+  "prompt": "Pixel art JRPG battle background, Stardew Valley-like 16-bit cozy pixel art (crisp hard square pixels, limited palette, flat 2-3 tone shading, no anti-aliasing). Seen from a slightly high 3/4 angle: Misty swamp: weeping willows, murky ponds with lily pads, reeds, thick pale fog as a thin backdrop band in the top 20% of the image only; below it an open natural clearing whose flat ground fills the lower 80% of the image. Keep the whole ground area open, even and uncluttered (no paths, no patches, no circles), details only along the edges. Keep all important details within the central 80% width. No characters, no creatures, no UI, no text, no frame, no border."
  },
  {
   "id": "b4",
   "status": "todo",
-  "prompt": "Pixel art JRPG battle background, Stardew Valley-like 16-bit cozy pixel art (crisp hard square pixels, limited palette, flat 2-3 tone shading, no anti-aliasing). Seen from a slightly high 3/4 angle: Bandit hideout in the woods: dead trees, wooden palisade, tents and smoking campfire embers at the edges in the top third of the image as a backdrop; below it an open natural clearing whose flat ground fills the lower 60% of the image. Keep the whole ground area open, even and uncluttered (no paths, no patches, no circles), details only along the edges. Keep all important details within the central 80% width. No characters, no creatures, no UI, no text, no frame, no border."
+  "prompt": "Pixel art JRPG battle background, Stardew Valley-like 16-bit cozy pixel art (crisp hard square pixels, limited palette, flat 2-3 tone shading, no anti-aliasing). Seen from a slightly high 3/4 angle: Bandit hideout in the woods: dead trees, wooden palisade, tents and smoking campfire embers at the edges as a thin backdrop band in the top 20% of the image only; below it an open natural clearing whose flat ground fills the lower 80% of the image. Keep the whole ground area open, even and uncluttered (no paths, no patches, no circles), details only along the edges. Keep all important details within the central 80% width. No characters, no creatures, no UI, no text, no frame, no border."
  },
  {
   "id": "b5",
   "status": "todo",
-  "prompt": "Pixel art JRPG battle background, Stardew Valley-like 16-bit cozy pixel art (crisp hard square pixels, limited palette, flat 2-3 tone shading, no anti-aliasing). Seen from a slightly high 3/4 angle: Fairy grove at twilight: blue-violet trees with glowing crystal leaves, floating sparkles, luminous mushrooms in the top third of the image as a backdrop; below it an open natural clearing whose flat ground fills the lower 60% of the image. Keep the whole ground area open, even and uncluttered (no paths, no patches, no circles), details only along the edges. Keep all important details within the central 80% width. No characters, no creatures, no UI, no text, no frame, no border."
+  "prompt": "Pixel art JRPG battle background, Stardew Valley-like 16-bit cozy pixel art (crisp hard square pixels, limited palette, flat 2-3 tone shading, no anti-aliasing). Seen from a slightly high 3/4 angle: Fairy grove at twilight: blue-violet trees with glowing crystal leaves, floating sparkles, luminous mushrooms as a thin backdrop band in the top 20% of the image only; below it an open natural clearing whose flat ground fills the lower 80% of the image. Keep the whole ground area open, even and uncluttered (no paths, no patches, no circles), details only along the edges. Keep all important details within the central 80% width. No characters, no creatures, no UI, no text, no frame, no border."
  },
  {
   "id": "cave",
   "status": "todo",
-  "prompt": "Pixel art JRPG battle background, Stardew Valley-like 16-bit cozy pixel art (crisp hard square pixels, limited palette, flat 2-3 tone shading, no anti-aliasing). Seen from a slightly high 3/4 angle: Underground crystal cave: dark rocky walls and stalactites, glowing cyan and violet crystals, damp stone floor in the top third of the image as a backdrop; below it an open natural clearing whose flat ground fills the lower 60% of the image. Keep the whole ground area open, even and uncluttered (no paths, no patches, no circles), details only along the edges. Keep all important details within the central 80% width. No characters, no creatures, no UI, no text, no frame, no border."
+  "prompt": "Pixel art JRPG battle background, Stardew Valley-like 16-bit cozy pixel art (crisp hard square pixels, limited palette, flat 2-3 tone shading, no anti-aliasing). Seen from a slightly high 3/4 angle: Underground crystal cave: dark rocky walls and stalactites, glowing cyan and violet crystals, damp stone floor as a thin backdrop band in the top 20% of the image only; below it an open natural clearing whose flat ground fills the lower 80% of the image. Keep the whole ground area open, even and uncluttered (no paths, no patches, no circles), details only along the edges. Keep all important details within the central 80% width. No characters, no creatures, no UI, no text, no frame, no border."
  }
 ]

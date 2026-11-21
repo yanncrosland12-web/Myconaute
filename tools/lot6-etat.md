@@ -12,3 +12,4 @@ Palier (tout done) : build.py (injecte lot6/bg via bgpx.js) → err/smoke + capt
 
 ## Journal
 - 21/11 : b0 (clairière dorée) gen MAHbi0KywaM → OK, intégré (bgpx.js lit window.BGPX, repli canvas). Les 2 « taches » au sol ne tombent pas pile sous les persos → prompts suivants : sol uniforme sans taches. b0 à refaire en fin de lot si temps.
+- 21/11 13:0x : retour Yann « persos pas sur leurs emplacements » → b0 refait (MAHbixvJzD0) sol uniforme, bande de décor réduite au 20 % du haut ; prompts du lot mis à jour pareil. Capture OK : persos posés au sol.
