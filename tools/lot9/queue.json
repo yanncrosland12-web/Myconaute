@@ -1,0 +1,73 @@
+[
+ {
+  "id": "L9_1",
+  "n": 2,
+  "style": "C",
+  "keys": [
+   "s_comptoir",
+   "s_caisse",
+   "g_bureau",
+   "g_comptoir"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "L9_2",
+  "n": 2,
+  "style": "C",
+  "keys": [
+   "s_tapis",
+   "s_trappe",
+   "g_tonneau",
+   "g_cheminee"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "L9_3",
+  "n": 2,
+  "style": "C",
+  "keys": [
+   "s_ardoise",
+   "s_bocaux",
+   "s_ratelier",
+   "g_tableau"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "L9_4",
+  "n": 2,
+  "style": "C",
+  "keys": [
+   "s_enseigne",
+   "s_fenetre",
+   "s_porte_cuisine",
+   "s_porte_maison"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "L9_5",
+  "n": 2,
+  "style": "C",
+  "keys": [
+   "s_pancarte_foret",
+   "s_pancarte_armes",
+   "s_pancarte_guilde",
+   "g_porte"
+  ],
+  "status": "todo"
+ },
+ {
+  "id": "L9_6",
+  "n": 2,
+  "style": "C",
+  "keys": [
+   "g_biblio",
+   "g_banniere",
+   "g_embleme"
+  ],
+  "status": "todo"
+ }
+]
