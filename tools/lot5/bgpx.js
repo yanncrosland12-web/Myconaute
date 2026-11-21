@@ -37,7 +37,7 @@
     const P = window.BGPX || {}, k = bgKey();
     if (!k || !P[k]) return false;
     let dark = 0, hue = 0;
-    if (k === "cave") { const d = (S.forest && S.forest.depth) || 1; dark = Math.min(0.45, 0.05 + d * 0.04); hue = ((d - 1) % 5) * 28; }
+    if (k === "cave") { const d = (S.forest && S.forest.depth) || 1; dark = Math.min(0.4, 0.04 + d * 0.035); }
     host.innerHTML = '<img class="b-bgpx" alt="" src="' + P[k] + '" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;image-rendering:pixelated;image-rendering:crisp-edges;' + (hue ? "filter:hue-rotate(" + hue + "deg);" : "") + '">' + (dark ? '<div style="position:absolute;inset:0;background:#000;opacity:' + dark.toFixed(2) + '"></div>' : "");
     return true;
   }
