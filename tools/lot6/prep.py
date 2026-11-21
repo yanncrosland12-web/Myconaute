@@ -16,7 +16,7 @@ try:
     per,ph=native.period_phase(prof,3,12,None,False)
 except Exception as e:
     per=4
-per=max(3,min(10,float(per) if per else 4))
+per=6.6  # taille de pixel fixe pour tous les fonds (homogène)
 w=round(im.width/per);h=round(im.height/per)
 sm=im.resize((w,h),Image.BOX)
 sm=sm.quantize(colors=48,method=Image.Quantize.MEDIANCUT).convert('RGB')
