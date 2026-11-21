@@ -4677,7 +4677,7 @@ function tick(t) {
 function animate(a, name, dur, o = {}) {
   var _a;
   const held = a.node.querySelector(".held"), ov = a.node.querySelector(".ovin");
-  held.innerHTML = o.held ? TOOLS[o.held] : "";
+  held.innerHTML = o.held && !a.node.closest("#battle") ? TOOLS[o.held] : "";
   ov.innerHTML = o.potion ? '<g transform="scale(.22) translate(-50 -96)">'.concat(potionBody(POT[o.potion]), "</g>") : o.item ? '<g transform="scale(.24) translate(-50 -94)">'.concat(mushBody(SP[o.item]), "</g>") : o.dish ? '<g transform="scale(.26) translate(-50 -90)">'.concat(dishBody(REC[o.dish]), "</g>") : "";
   setState(a, "idle");
   a.node.getBoundingClientRect();

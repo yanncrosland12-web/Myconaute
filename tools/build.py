@@ -62,6 +62,8 @@ if os.path.exists('lot4/pxui.js'):
     PWA='<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#2a1c12"><meta name="mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="icon-192.png">'
     s=s.replace('</head>',PWA+'</head>',1)
     k=s.rfind('</body>'); s=s[:k]+'<script>if("serviceWorker" in navigator&&/github\\.io$/.test(location.hostname))navigator.serviceWorker.register("sw.js").catch(()=>{});</script>'+s[k:]
+    # combat : plus d'arme vectorielle par-dessus le sprite pixel d'attaque
+    s=s.replace('held.innerHTML = o.held ? TOOLS[o.held] : "";','held.innerHTML = o.held && !a.node.closest("#battle") ? TOOLS[o.held] : "";')
     # sprites à retourner (dos contre le mur) : miroir horizontal dans la même boîte
     FLIP=['l_biblio']
     # recalage de sprites : [dx, dy, échelle] (échelle ancrée en bas au centre)
