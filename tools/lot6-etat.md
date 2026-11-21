@@ -21,3 +21,4 @@ Palier (tout done) : build.py (injecte lot6/bg via bgpx.js) → err/smoke + capt
 - 21/11 18:0x : 0.9.55 publiée en avance (événements nuit/réveil/jour + fonds b0–b4). Le palier de fin de lot 6 (b5 + grotte) sera la 0.9.56.
 - 21/11 18:xx : 0.9.56 publiée (pack profondeur). Fin du lot 6 (b5 + grotte) → version suivante disponible (0.9.57+).
 - 21/11 18:1x : b5 (bosquet féerique) gen MAHbkoxtUZs → OK. Reste : grotte.
+- 21/11 22:2x : grotte gen MAHblk9JTus → OK (teinte par profondeur retirée sur le fond peint, assombrissement seul). LOT 6 TERMINÉ → 0.9.58 publiée (Pages, artefact v71, mémoire).

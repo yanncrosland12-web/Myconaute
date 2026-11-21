@@ -18,3 +18,4 @@ Palier (DONE ALL) : build.py version suivante → err/smoke + capture boutique/g
 
 ## Journal
 - 21/11 18:2x : pipeline prêt (capture, planches, furn.js, build.py). 6 cycles à partir de 19:11 UTC (après la grotte du lot 6 à 18:41).
+- 21/11 22:2x : cycle de 19:11 parti tard (session inactive) ; ce cycle a servi à la grotte (lot 6). L9_1 au prochain cycle (~22:52).
