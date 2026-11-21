@@ -3,6 +3,8 @@
   const PX = window.FURNPX || {};
   if (!Object.keys(PX).length) return;
   const NS = "http://www.w3.org/2000/svg";
+  /* sprites dessinés de face : posés dans le repère du mur (boîte locale x,y,w,h) */
+  const LOC = { g_cheminee: [146, 54, 54, 96] };
   function marks(svg, room) {
     const all = [...svg.querySelectorAll("*")], M = {};
     const A = (e, k) => e.getAttribute(k);
@@ -63,10 +65,11 @@
         const els = M[k], first = els[0], par = first.parentNode;
         const im = doc.createElementNS(NS, "image");
         im.setAttribute("href", "data:image/png;base64," + d[0]);
-        im.setAttribute("x", d[1]); im.setAttribute("y", d[2]); im.setAttribute("width", d[3]); im.setAttribute("height", d[4]);
+        const L = LOC[k], bx = L || d.slice(1);
+        im.setAttribute("x", bx[0]); im.setAttribute("y", bx[1]); im.setAttribute("width", bx[2]); im.setAttribute("height", bx[3]);
         im.setAttribute("preserveAspectRatio", "none"); im.setAttribute("style", "image-rendering:pixelated;image-rendering:crisp-edges");
         im.setAttribute("class", "fx9"); im.setAttribute("pointer-events", "none");
-        const m = ctm(first, svg).inverse();
+        const m = L ? svg.createSVGMatrix() : ctm(first, svg).inverse();
         if (!(m.a === 1 && m.b === 0 && m.c === 0 && m.d === 1 && m.e === 0 && m.f === 0)) im.setAttribute("transform", "matrix(" + [m.a, m.b, m.c, m.d, m.e, m.f].map((v) => +v.toFixed(5)).join(" ") + ")");
         par.insertBefore(im, first);
         els.forEach((e) => e.remove()); n++;
