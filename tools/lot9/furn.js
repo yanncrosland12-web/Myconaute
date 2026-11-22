@@ -6,7 +6,7 @@
   /* sprites dessinés de face : posés dans le repère du mur (boîte locale x,y,w,h) */
   const LOC = { g_cheminee: [146, 54, 54, 96] };
   /* ombres de contact (lot 10) pour les meubles posés au sol */
-  const SHD = { s_comptoir: { f: 0.96, o: 0.6 }, s_caisse: { f: 0.96, o: 0.6 }, g_bureau: { f: 0.96, o: 0.6 }, g_comptoir: { f: 0.96, o: 0.6 }, g_tonneau: { f: 0.85, d: 0.5, o: 0.6 } };
+  const SHD = { s_comptoir: { f: 0.96, o: 0.6 }, s_caisse: { f: 0.96, o: 0.6 }, g_bureau: { f: 0.96, o: 0.6 }, g_comptoir: { f: 0.96, o: 0.6 }, g_tonneau: { f: 0.85, d: 0.5, o: 0.6 }, s_pancarte_foret: { px: 0.24, f: 0.5, o: 0.55 }, s_pancarte_armes: { px: 0.3, f: 0.45, o: 0.55 }, s_pancarte_guilde: { px: 0.5, f: 0.4, o: 0.55 } };
   function marks(svg, room) {
     const all = [...svg.querySelectorAll("*")], M = {};
     const A = (e, k) => e.getAttribute(k);
@@ -77,7 +77,7 @@
         const sh = SHD[k];
         if (sh && typeof groundShadow === "function") {
           const g = doc.createElementNS(NS, "g");
-          g.innerHTML = groundShadow(d[1] + d[3] / 2, d[2] + d[4], d[3], sh);
+          g.innerHTML = groundShadow(d[1] + d[3] * (sh.px || 0.5), d[2] + d[4], d[3], sh);
           par.insertBefore(g.firstChild, im);
         }
         els.forEach((e) => e.remove()); n++;

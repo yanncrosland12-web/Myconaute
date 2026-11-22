@@ -24,3 +24,4 @@ Palier (DONE ALL) : build.py version suivante (0.9.60 : la 0.9.59 est sortie ave
 - 22/11 23:4x : demande Yann « les décors flottent » → lot 10 (lot10/ground.js) : ombres de contact sous tous les objets au sol (y compris meubles lot 9 via furn.js SHD). 0.9.59 publiée. PALIER DU LOT 9 = 0.9.60 (pas 0.9.59).
 - 22/11 00:0x : L9_3 (ardoise, bocaux, râtelier, tableau des contrats) ref MAHbl5KUf7k gen MAHbl9asAW0 → découpé, rendu OK. À vérifier au palier : texte CONTRATS sur la plaque, champignons dans les bocaux (sac non vide).
 - 22/11 00:3x : L9_4 (enseigne, fenêtre, portes cuisine/maison) ref MAHbmPegu2w gen MAHbmK9bN8M → découpé, rendu OK (porte cuisine peu contrastée sur le mur bois, acceptable).
+- 22/11 01:0x : L9_5 (pancartes forêt/armes/guilde, porte guilde) ref MAHbmSeHJ2Q gen MAHbmf0YU8Y → découpé ; ombres au pied des poteaux (SHD px). Rendu OK.
