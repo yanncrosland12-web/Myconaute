@@ -4,7 +4,7 @@
   if (!Object.keys(PX).length) return;
   const NS = "http://www.w3.org/2000/svg";
   /* sprites dessinés de face : posés dans le repère du mur (boîte locale x,y,w,h) */
-  const LOC = { g_cheminee: [146, 54, 54, 96] };
+  const LOC = { g_cheminee: [146, 54, 54, 96], g_banniere: [32, 8, 36, 66] };
   /* ombres de contact (lot 10) pour les meubles posés au sol */
   const SHD = { s_comptoir: { f: 0.96, o: 0.6 }, s_caisse: { f: 0.96, o: 0.6 }, g_bureau: { f: 0.96, o: 0.6 }, g_comptoir: { f: 0.96, o: 0.6 }, g_tonneau: { f: 0.85, d: 0.5, o: 0.6 }, s_pancarte_foret: { px: 0.24, f: 0.5, o: 0.55 }, s_pancarte_armes: { px: 0.3, f: 0.45, o: 0.55 }, s_pancarte_guilde: { px: 0.5, f: 0.4, o: 0.55 } };
   function marks(svg, room) {
