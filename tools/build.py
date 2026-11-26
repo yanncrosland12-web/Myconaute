@@ -74,7 +74,12 @@ if os.path.exists('lot4/pxui.js'):
     k=s.rfind('</body>'); s=s[:k]+'<script>'+open('lot8/depth.js').read()+'</script>'+s[k:]
     k=s.rfind('</body>'); s=s[:k]+'<script>'+open('lot8/culture.js').read()+'</script>'+s[k:]
     s=s.replace('fill="#3a2718" font-weight="800">GROS','fill="#f0e4ca" font-weight="800" stroke="#3a2718" stroke-width=".6" paint-order="stroke">GROS',1)
-    k=s.rfind('</body>'); s=s[:k]+'<script>'+open('lot10/ground.js').read()+'</script>'+s[k:]
+    f11=[k.split(':')[1] for x in (json.load(open('lot11/queue.json')) if os.path.exists('lot11/queue.json') else []) if x['status']=='done' for k in x['keys']]
+    # lot 10 (ombres floues) retiré en 0.9.61 à la demande de Yann ; lot 13 : sol fin + plinthes + lumière commune
+    if os.path.exists('lot13/queue.json'):
+        sm=[x['key'] for x in json.load(open('lot13/queue.json')) if x['status']=='done']
+        k=s.rfind('</body>'); s=s[:k]+'<script>window.SMOOTHPX='+json.dumps(sm)+';'+open('lot13/floor_fine.js').read()+'</script>'+s[k:]
+        k=s.rfind('</body>'); s=s[:k]+'<script>window.SMOOTHPX='+json.dumps(sm)+';(function(){(window.SMOOTHPX||[]).forEach(function(k){var y=document.getElementById("dp-"+k);if(y)y.querySelectorAll("image").forEach(function(i){i.style.imageRendering="auto"})})})();</script>'+s[k:]
     if os.path.exists('lot9/px.json'):
         k=s.rfind('</body>'); s=s[:k]+'<script>window.FURNPX='+open('lot9/px.json').read()+';</script><script>'+open('lot9/furn.js').read()+'</script>'+s[k:]
     # sprites à retourner (dos contre le mur) : miroir horizontal dans la même boîte

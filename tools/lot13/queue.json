@@ -1,0 +1,141 @@
+[
+ {
+  "key": "h_lit_paille",
+  "desc": "the mossy straw bed",
+  "status": "done",
+  "gen": "MAHcAfpCrGU"
+ },
+ {
+  "key": "h_lit_bois",
+  "desc": "the purple wooden bed with mushroom headboard",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcAv84COg"
+ },
+ {
+  "key": "h_lit_champi",
+  "desc": "the mushroom bed with a big mushroom cap headboard",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcAuvM7h8"
+ },
+ {
+  "key": "h_lit_baldaquin",
+  "desc": "the mossy canopy bed with mushroom cap roof",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcA3NGPMI"
+ },
+ {
+  "key": "h_lit_hamac",
+  "desc": "the hammock between two posts",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcAyaCNUQ"
+ },
+ {
+  "key": "h_meuble_caisse",
+  "desc": "the stack of mushroom crates",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcBBmFSRo"
+ },
+ {
+  "key": "h_meuble_coffre",
+  "desc": "the chest",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcBEOXVJw"
+ },
+ {
+  "key": "h_meuble_etabli",
+  "desc": "the workbench",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcBXzFz38"
+ },
+ {
+  "key": "h_meuble_biblio",
+  "desc": "the bookcase",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcBaNC6KU"
+ },
+ {
+  "key": "h_meuble_armure",
+  "desc": "the armour stand",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcBmf9SKg"
+ },
+ {
+  "key": "h_lumiere_bougie",
+  "desc": "the crystal candle on a mushroom stool",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcBjRTbAs"
+ },
+ {
+  "key": "h_lumiere_lanterne",
+  "desc": "the standing lantern",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcB05Wtns"
+ },
+ {
+  "key": "h_compagnon_chat",
+  "desc": "the cat",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcCGdlyz0"
+ },
+ {
+  "key": "h_compagnon_renard",
+  "desc": "the fox",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcCEwXd8U"
+ },
+ {
+  "key": "h_compagnon_lapin",
+  "desc": "the rabbit",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcCUY9yVo"
+ },
+ {
+  "key": "h_compagnon_crapaud",
+  "desc": "the toad",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcCT2vuFg"
+ },
+ {
+  "key": "h_compagnon_escargot",
+  "desc": "the snail",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcCiGf1Dg"
+ },
+ {
+  "key": "h_compagnon_hibou",
+  "desc": "the owl on its perch",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcCofa5y4"
+ },
+ {
+  "key": "h_plante_fougere",
+  "desc": "the potted fern",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcC52wsTY"
+ },
+ {
+  "key": "h_plante_bonsai",
+  "desc": "the bonsai",
+  "status": "done",
+  "style": "B",
+  "gen": "MAHcC5YfSmc"
+ }
+]
