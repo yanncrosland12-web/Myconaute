@@ -5,23 +5,24 @@ import numpy as np
 from PIL import Image
 style,seed,out=sys.argv[1],int(sys.argv[2]),sys.argv[3]
 import os
-R=random.Random(seed); N=int(os.environ.get("N","100"))
+R=random.Random(seed); N=int(os.environ.get("N","100")); SC=N//100
 img=np.zeros((N,N,3),float)
 def hexc(h): return np.array([int(h[i:i+2],16) for i in (1,3,5)],float)
 def noise(a=6):
     return np.array([[R.uniform(-a,a) for _ in range(N)] for _ in range(N)])
-PAL={'damier':('#e9dfc4','#c9bc9c','#f4ecd6','#a89a7a'),'dalles':('#5b4434','#3f2d22','#735943','#2a1c15'),   # pierre chaude (maison)
+PAL={'labo':('#7d8790','#5a636b','#98a2aa','#3c4349'),'parquet_clair':('#b98a55','#8a6238','#d4a46a','#5a3d22'),'damier':('#e9dfc4','#c9bc9c','#f4ecd6','#a89a7a'),'dalles':('#5b4434','#3f2d22','#735943','#2a1c15'),   # pierre chaude (maison)
      'pierre':('#5d5566','#3e3747','#776e80','#2c2633'),
      'parquet':('#9a6236','#6a4122','#b97c45','#3a2212'),
      'tomettes':('#a65a3a','#7a3f28','#c27250','#55291a')}
 base,dark,light,seam=[hexc(c) for c in PAL[style]]
+if style=='parquet_clair': style='parquet'
 if style in('dalles','pierre'):
     # dalles irrégulières en appareil à joints décalés
     y=0; lab=-np.ones((N,N),int); k=0
     while y<N:
-        h=R.choice([9,10,11,12]); x=-R.randint(0,10)
+        h=R.choice([9,10,11,12])*SC; x=-R.randint(0,10)*SC
         while x<N:
-            w=R.choice([10,12,14,16,18]); lab[max(0,y):min(N,y+h),max(0,x):min(N,x+w)]=k; k+=1; x+=w
+            w=R.choice([10,12,14,16,18])*SC; lab[max(0,y):min(N,y+h),max(0,x):min(N,x+w)]=k; k+=1; x+=w
         y+=h
     tone={i:R.uniform(-14,14) for i in range(k)}
     for r in range(N):
@@ -58,7 +59,7 @@ elif style=='parquet':
 elif style=='damier':
     for r in range(N):
         for c in range(N):
-            a,b=r%10,c%10; even=((r//10)+(c//10))%2
+            T=10*SC; a,b=(r%T)*10//T,(c%T)*10//T; even=((r//T)+(c//T))%2
             img[r,c]=hexc('#e9dfc4') if even else hexc('#d8ccae')
             if not even and (abs(a-4.5)+abs(b-4.5))<3.2: img[r,c]=hexc('#3f6f6a')
             if not even and (abs(a-4.5)+abs(b-4.5))<1.2: img[r,c]=hexc('#e9dfc4')
@@ -67,7 +68,7 @@ elif style=='damier':
 else:
     for r in range(N):
         for c in range(N):
-            a,b=r%10,c%10; t=((r//10)*7+(c//10)*3)%5-2
+            T=10*SC; a,b=(r%T)*10//T,(c%T)*10//T; t=((r//T)*7+(c//T)*3)%5-2
             img[r,c]=base+t*5
             if a==9 or b==9: img[r,c]=seam
             elif a==0 or b==0: img[r,c]=light+t*3

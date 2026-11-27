@@ -31,3 +31,6 @@ Paliers : fin maison (20 objets) → 0.9.61 avec sol fin + plinthes + lumière +
 - 26/11 18:4x : h_compagnon_hibou gen MAHcCofa5y4 (fond blanc) → découpé, OK.
 - 26/11 19:2x : h_plante_fougere gen MAHcC52wsTY (fond blanc) → découpé, OK.
 - 26/11 19:5x : h_plante_bonsai gen MAHcC5YfSmc → découpé. MAISON TERMINÉE → 0.9.61 (floor_fine intégré, ground.js retiré, decoShadow vide pour SMOOTHPX). Baldaquin et biblio OK ; lanterne = suspendue (comme avant).
+- 27/11 : Yann valide la maison 0.9.61 (« C'est tout bon »). Lot 13 étendu : cuisine, labo, salle d'armes, coffre (style C). Palier suivant 0.9.62 à la fin de ces objets ; si un objet est sombre → fond BLANC.
+- 27/11 10:4x : k_four_atre gen MAHcGmyGAZ0 (fond blanc) → découpé.
+- 27/11 : Yann « rajoute le sol pour tout » → lot14/floors.js (remplace les motifs #tx-sol_* : cuisine tomettes/damier, labo carreaux gris, salle d'armes pierre, guilde dalles ; boutique et sols maison via floorArt). Rendu OK, sortira dans la 0.9.62.

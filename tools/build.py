@@ -79,6 +79,7 @@ if os.path.exists('lot4/pxui.js'):
     if os.path.exists('lot13/queue.json'):
         sm=[x['key'] for x in json.load(open('lot13/queue.json')) if x['status']=='done']
         k=s.rfind('</body>'); s=s[:k]+'<script>window.SMOOTHPX='+json.dumps(sm)+';'+open('lot13/floor_fine.js').read()+'</script>'+s[k:]
+        k=s.rfind('</body>'); s=s[:k]+'<script>'+open('lot14/floors.js').read()+'</script>'+s[k:]
         k=s.rfind('</body>'); s=s[:k]+'<script>window.SMOOTHPX='+json.dumps(sm)+';(function(){(window.SMOOTHPX||[]).forEach(function(k){var y=document.getElementById("dp-"+k);if(y)y.querySelectorAll("image").forEach(function(i){i.style.imageRendering="auto"})})})();</script>'+s[k:]
     if os.path.exists('lot9/px.json'):
         k=s.rfind('</body>'); s=s[:k]+'<script>window.FURNPX='+open('lot9/px.json').read()+';</script><script>'+open('lot9/furn.js').read()+'</script>'+s[k:]
