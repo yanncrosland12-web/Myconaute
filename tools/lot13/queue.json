@@ -137,5 +137,138 @@
   "status": "done",
   "style": "B",
   "gen": "MAHcC5YfSmc"
+ },
+ {
+  "key": "k_four_atre",
+  "desc": "the stone hearth oven",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcGmyGAZ0"
+ },
+ {
+  "key": "k_four_fonte",
+  "desc": "the cast-iron stove",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcG3V7RQs"
+ },
+ {
+  "key": "k_four_champi",
+  "desc": "the mushroom-shaped oven",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcG0wDX6k"
+ },
+ {
+  "key": "k_four_dragon",
+  "desc": "the dragon-head forge oven",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcHPud2mY"
+ },
+ {
+  "key": "k_plan_table",
+  "desc": "the wooden kitchen table",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcHMx96l4"
+ },
+ {
+  "key": "k_plan_billot",
+  "desc": "the butcher block worktop",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcHb8JHj4"
+ },
+ {
+  "key": "k_plan_marbre",
+  "desc": "the marble worktop",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcHfANmgY"
+ },
+ {
+  "key": "k_plan_etal",
+  "desc": "the market stall worktop",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcHs9_WCI"
+ },
+ {
+  "key": "k_aide_lutin",
+  "desc": "the little gnome kitchen helper",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcH9x1UA0"
+ },
+ {
+  "key": "k_aide_hibou",
+  "desc": "the owl kitchen helper on its perch",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcHyR9Hno"
+ },
+ {
+  "key": "k_aide_chat",
+  "desc": "the cat kitchen helper",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcIDcg6-E"
+ },
+ {
+  "key": "k_aide_golem",
+  "desc": "the small stone golem kitchen helper",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcII9gHJw"
+ },
+ {
+  "key": "l_chaudron",
+  "desc": "the alchemy cauldron",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcIUB1dMw"
+ },
+ {
+  "key": "l_etabli",
+  "desc": "the alchemist workbench",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcIauuC78"
+ },
+ {
+  "key": "l_biblio",
+  "desc": "the laboratory bookcase",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcIvNAcFg"
+ },
+ {
+  "key": "chest",
+  "desc": "the treasure chest",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcI2HfJJk"
+ },
+ {
+  "key": "a_mannequin",
+  "desc": "the training dummy",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcI1-sZcA"
+ },
+ {
+  "key": "a_rochers",
+  "desc": "the pile of training rocks",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcJF6d0G4"
+ },
+ {
+  "key": "a_presentoir",
+  "desc": "the weapon display stand",
+  "status": "done",
+  "style": "C",
+  "gen": "MAHcJK8vC1E"
  }
 ]

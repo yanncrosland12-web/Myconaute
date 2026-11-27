@@ -18,6 +18,14 @@ for k in _a:
     HOLES={'h_meuble_etabli':800,'h_lumiere_bougie':800,'h_lit_baldaquin':800,'h_lit_hamac':800,'h_lumiere_lanterne':800,'h_meuble_armure':800,'h_compagnon_hibou':800}
     CLIPBOT={'h_meuble_armure':0.885}
     if k in CLIPBOT: ImageDraw.Draw(im).rectangle((0,int(im.height*CLIPBOT[k]),im.width,im.height),fill=(0,0,0))
+    WHOLES={'l_etabli':(300,0.55)}   # (taille mini, zone : sous y=frac)   # fond blanc : trous fermés (entre ficelles, etc.) à vider si blanc pur et assez grands
+    if white and k in WHOLES:
+        from scipy import ndimage
+        t0=np.array(im).astype(int); wh=(t0.min(2)>228)&((t0.max(2)-t0.min(2))<14)&~bgm
+        lab,n=ndimage.label(wh); sz=ndimage.sum(wh,lab,range(1,n+1))
+        ms,yf=WHOLES[k]; cy=ndimage.center_of_mass(wh,lab,range(1,n+1))
+        for i,s_ in enumerate(sz):
+            if s_>=ms and cy[i][0]>=yf*im.height: bgm|=(lab==i+1)
     if white: rgb,al=np.array(im),~bgm
     else: rgb,al=px2.cutout(im,thr=30,minhole=HOLES.get(k,10**9))
     a=np.asarray(al).astype(np.uint8)*255

@@ -34,3 +34,21 @@ Paliers : fin maison (20 objets) → 0.9.61 avec sol fin + plinthes + lumière +
 - 27/11 : Yann valide la maison 0.9.61 (« C'est tout bon »). Lot 13 étendu : cuisine, labo, salle d'armes, coffre (style C). Palier suivant 0.9.62 à la fin de ces objets ; si un objet est sombre → fond BLANC.
 - 27/11 10:4x : k_four_atre gen MAHcGmyGAZ0 (fond blanc) → découpé.
 - 27/11 : Yann « rajoute le sol pour tout » → lot14/floors.js (remplace les motifs #tx-sol_* : cuisine tomettes/damier, labo carreaux gris, salle d'armes pierre, guilde dalles ; boutique et sols maison via floorArt). Rendu OK, sortira dans la 0.9.62.
+- 27/11 11:1x : k_four_fonte gen MAHcG3V7RQs → découpé.
+- 27/11 11:4x : k_four_champi gen MAHcG0wDX6k → découpé.
+- 27/11 12:1x : k_four_dragon gen MAHcHPud2mY → découpé.
+- 27/11 12:55 UTC k_plan_table done (gen MAHcHMx96l4, fond blanc, tabouret inclus)
+- 27/11 13:30 UTC k_plan_billot done (gen MAHcHb8JHj4, fond blanc, couperet + herbes)
+- 27/11 14:02 UTC k_plan_marbre done (gen MAHcHfANmgY, fond blanc, plateau opaque vérifié)
+- 27/11 14:36 UTC k_plan_etal done (gen MAHcHs9_WCI, fond blanc)
+- 27/11 15:09 UTC k_aide_lutin done (gen MAHcH9x1UA0, fond blanc, barbe opaque vérifiée)
+- 27/11 15:42 UTC k_aide_hibou done (gen MAHcHyR9Hno, fond blanc)
+- 27/11 16:16 UTC k_aide_chat done (gen MAHcIDcg6-E, fond blanc, toque opaque)
+- 27/11 16:50 UTC k_aide_golem done (gen MAHcII9gHJw, fond blanc)
+- 27/11 17:23 UTC l_chaudron done (gen MAHcIUB1dMw, fond blanc, anses pleines pour éviter les trous)
+- 27/11 17:58 UTC l_etabli done (gen MAHcIauuC78, fond blanc ; cut13 : nouveau WHOLES={key:(taille,yfrac)} vide les trous blancs fermés sous yfrac — ici entre les bottes d'herbes)
+- 27/11 18:31 UTC l_biblio done (gen MAHcIvNAcFg, fond blanc)
+- 27/11 19:03 UTC chest done (gen MAHcI2HfJJk, fond blanc)
+- 27/11 19:37 UTC a_mannequin done (gen MAHcI1-sZcA, fond blanc)
+- 27/11 20:10 UTC a_rochers done (gen MAHcJF6d0G4, fond blanc)
+- 27/11 20:43 UTC a_presentoir done (gen MAHcJK8vC1E, fond blanc) — DONE ALL lot 13 (39/39)
